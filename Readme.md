@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Никита Прокопенко](https://up.htmlacademy.ru/adaptive/14/user/583029).
-* Наставник: `Неизвестно`.
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
 
