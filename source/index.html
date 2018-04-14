@@ -5,8 +5,100 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <nav class="main-nav">
+        <b class="main-nav__logo nav-logo">Pink</b>
+        <button class="main-nav__toggle nav-toggle" type="button">Меню</button>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item nav-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Главная страница Pink</h1>
+      <section class="intro">
+        <h2 class="visually-hidden">Где скачать наше приложение</h2>
+        <img class="intro__banner" src="http://placehold.it/150x100" width="320" height="462" alt="Взгляните на жизнь иначе!">
+        <button class="intro__button button" type="button">Скачать приложение</button>
+        <ul class="intro__list platform-list">
+          <li class="platform-list__item">
+            <img class="platform-list__icon" src="http://placehold.it/150x100" width="100" height="100" alt="Apple">
+          </li>
+          <li class="platform-list__item">
+            <img class="platform-list__icon" src="http://placehold.it/150x100" width="100" height="100" alt="Android">
+          </li>
+          <li class="platform-list__item">
+            <img class="platform-list__icon" src="http://placehold.it/150x100" width="100" height="100" alt="Windows">
+          </li>
+        </ul>
+        <p class="intro__description">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+      <section class="information">
+        <h2 class="information__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <ul class="information__description description-list">
+          <li class="description-list__item">
+            <h3 class="description-list__item--title">
+              Поднимает настроение
+            </h3>
+            <p class="description-list__item--text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="description-list__item">
+            <h3 class="description-list__item--title">
+              Меняет мир вокруг
+            </h3>
+            <p class="description-list__item--text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="description-list__item">
+            <h3 class="description-list__item--title">
+              Заводит новых друзей
+            </h3>
+            <p class="description-list__item--text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="information-banner" src="http://placehold.it/150x100" width="160" height="300" alt="Всем привет!">
+      </section>
+      <section class="review">
+        <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <div class="review-slider">
+          <h3 class="review-slider__title">
+            Николай Петров
+          </h3>
+          <p class="review-slider__info">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </div>
+        <ul class="review-slider__buttons point-buttons">
+          <li class="point-buttons__item">
+            <button class="point-button point-button--active" type="button">Слайд 1</button>
+          </li>
+          <li class="point-buttons__item">
+            <button class="point-button" type="button">Слайд 2</button>
+          </li>
+          <li class="point-buttons__item">
+            <button class="point-button" type="button">Слайд 3</button>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
