@@ -47,7 +47,8 @@
         </p>
       </section>
       <section class="information">
-        <h2 class="information__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+        <h2 class="information__title title">Устали от серости мегаполиса?</h2>
+        <h2 class="information__title title">Нам есть, что вам предложить!</h2>
         <ul class="information__description description-list">
           <li class="description-list__item">
             <h3 class="description-list__item--title">
@@ -77,27 +78,104 @@
         <img class="information-banner" src="http://placehold.it/150x100" width="160" height="300" alt="Всем привет!">
       </section>
       <section class="review">
-        <h2 class="visually-hidden">Отзывы пользователей</h2>
-        <div class="review-slider">
-          <h3 class="review-slider__title">
+        <div class="review-wrapper slider">
+          <h2 class="visually-hidden">Отзывы пользователей</h2>
+          <h3 class="review__title">
             Николай Петров
           </h3>
-          <p class="review-slider__info">
+          <p class="review__info">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»
           </p>
+          <ul class="review__buttons point-buttons">
+            <li class="point-buttons__item">
+              <button class="point-button point-button--active" type="button">Слайд 1</button>
+            </li>
+            <li class="point-buttons__item">
+              <button class="point-button" type="button">Слайд 2</button>
+            </li>
+            <li class="point-buttons__item">
+              <button class="point-button" type="button">Слайд 3</button>
+            </li>
+          </ul>
         </div>
-        <ul class="review-slider__buttons point-buttons">
-          <li class="point-buttons__item">
-            <button class="point-button point-button--active" type="button">Слайд 1</button>
+      </section>
+      <section class="price">
+        <div class="price-wrapper slider">
+          <h2 class="visually-hidden">Цены</h2>
+          <span class="label">Хит</span>
+          <table class="price-table">
+            <tr class="price-table__title-row">
+              <td class="price-table__title">
+                Стандарт
+              </td>
+              <td class="price-table__cost">
+                3,99 USD
+              </td>
+            </tr>
+            <tr class="price-table__content-row">
+              <td class="price-table__content">
+                Розовый фильтр
+              </td>
+              <td class="price-table__icon">
+                <span class="yes-icon">Да</span>
+              </td>
+            </tr>
+            <tr class="price-table__content-row">
+              <td class="price-table__content">
+                Смайлики
+              </td>
+              <td class="price-table__icon">
+                <span class="yes-icon">Да</span>
+              </td>
+            </tr>
+            <tr class="price-table__content-row">
+              <td class="price-table__content">
+                Комментарии
+              </td>
+              <td class="price-table__icon">
+                <span class="no-icon">Нет</span>
+              </td>
+            </tr>
+          </table>
+          <ul class="price__buttons point-buttons">
+            <li class="point-buttons__item">
+              <button class="point-button" type="button">Слайд 1</button>
+            </li>
+            <li class="point-buttons__item">
+              <button class="point-button point-button--active" type="button">Слайд 2</button>
+            </li>
+            <li class="point-buttons__item">
+              <button class="point-button" type="button">Слайд 3</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title title">
+          Остались вопросы? Свяжитесь с нами!
+        </h2>
+        <ul class="contacts__list text-list">
+          <li class="text-list__item">
+            Звоните:
+            <span class="text-list__item--content">
+              +7 (812) 555-66-66
+            </span>
           </li>
-          <li class="point-buttons__item">
-            <button class="point-button" type="button">Слайд 2</button>
+          <li class="text-list__item">
+            Пишите:
+            <span class="text-list__item--content">
+              mail@htmlacademy.ru
+            </span>
           </li>
-          <li class="point-buttons__item">
-            <button class="point-button" type="button">Слайд 3</button>
+          <li class="text-list__item">
+            Приезжайте в гости:
+            <span class="text-list__item--content">
+              ул. Большая Конюшенная, 19/8
+            </span>
           </li>
         </ul>
+        <img class="contacts__map map" src="http://placehold.it/150x100" width="100" height="100" alt="Карта">
       </section>
     </main>
   </body>
