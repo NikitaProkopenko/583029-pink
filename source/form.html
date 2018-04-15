@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <b class="main-nav__logo nav-logo">Pink</b>
+        <button class="main-nav__toggle nav-toggle" type="button">Меню</button>
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav-list__item nav-list__item--active">
+            <a>Конкурс</a>
+          </li>
+          <li class="nav-list__item">
+            <a href="htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-page">
+      <section class="intro">
+        <h2 class="visually-hidden">Поделитесь своей историей и получите шанс выиграть ценный приз</h2>
+        <img class="intro__banner" src="http://placehold.it/150x100" width="320" height="462" alt="Взгляните на жизнь иначе!">
+        <p class="intro__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
+          вашу бонусную карту! Пожалуйста, заполните форму ниже:
+        </p>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">Форма для конкурса</h2>
+        <form class="form-feedback" method="get" action="https://echo.htmlacademy.ru">
+          <div class="user-data">
+            <fieldset>
+              <label for="second-name">Фамилия:</label>
+              <input type="text" id="second-name" name="second-name" placeholder="Укажите фамилию">
+              <label for="first-name">Имя:</label>
+              <input type="text" id="first-name" name="second-name" placeholder="Введите ваше имя">
+              <label for="third-name">Отчество:</label>
+              <input type="text" id="third-name" name="thirs-name" placeholder="Ну и отчество тоже">
+            </fieldset>
+          </div>
+          <div class="events">
+            <fieldset>
+              <legend>
+                Ваши безбашенные достижения в путешествии
+              </legend>
+              <ul class="events__list user-events">
+                <li class="user-events__list">
+                  <input class="user-events__list--checkbox" type="checkbox" name="selfie" id="selfie" checked>
+                  <label for="selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="user-events__list">
+                  <input class="user-events__list--checkbox" type="checkbox" name="beach" id="beach" checked>
+                  <label for="beach">Обгорел на пляже</label>
+                </li>
+                <li class="user-events__list">
+                  <input class="user-events__list--checkbox" type="checkbox" name="norris" id="norris">
+                  <label for="norris">Видел Чака Норриса</label>
+                </li>
+                <li class="user-events__list">
+                  <input class="user-events__list--checkbox" type="checkbox" name="shopping" id="shopping">
+                  <label for="shopping">Накупил сувениров</label>
+                </li>
+                <li class="user-events__list">
+                  <input class="user-events__list--checkbox" type="checkbox" name="tower" id="tower" checked>
+                  <label for="tower">Удержал башню</label>
+                </li>
+                <li class="user-events__list">
+                  <input class="user-events__list--checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="user-data">
+            <fieldset>
+              <label for="phone">Номер телефона</label>
+              <input type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              <label for="email">Адрес почты</label>
+              <input type="text" id="email" name="email" placeholder="Введите почту*">
+            </fieldset>
+          </div>
+          <div class="application-info">
+            <fieldset>
+              <legend>
+                С каким приложением путешествовали?
+              </legend>
+              <ul class="application-info__list platforms">
+                <li class="platforms__list">
+                  <input class="platforms__list--checkbox" type="checkbox" name="ios" id="ios" checked>
+                  <label for="ios">Pink для iOS</label>
+                </li>
+                <li class="platforms__list">
+                  <input class="platforms__list--checkbox" type="checkbox" name="android" id="android">
+                  <label for="android">Pink на Android</label>
+                </li>
+                <li class="platforms__list">
+                  <input class="platforms__list--checkbox" type="checkbox" name="windows" id="windows">
+                  <label for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
