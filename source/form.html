@@ -7,8 +7,8 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <b class="main-nav__logo nav-logo">Pink</b>
-        <button class="main-nav__toggle nav-toggle" type="button">Меню</button>
+        <b class="main-nav__logo">Pink</b>
+        <button class="main-nav__toggle" type="button">Меню</button>
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a href="index.html">Главная</a>
@@ -16,7 +16,7 @@
           <li class="nav-list__item">
             <a href="photo.html">Фотографии</a>
           </li>
-          <li class="nav-list__item nav-list__item--active">
+          <li class="nav-list__item active">
             <a>Конкурс</a>
           </li>
           <li class="nav-list__item">
@@ -28,7 +28,6 @@
     <main class="main-page">
       <section class="intro">
         <h2 class="visually-hidden">Поделитесь своей историей и получите шанс выиграть ценный приз</h2>
-        <img class="intro__banner" src="http://placehold.it/150x100" width="320" height="462" alt="Взгляните на жизнь иначе!">
         <p class="intro__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
           вашу бонусную карту! Пожалуйста, заполните форму ниже:
         </p>
@@ -36,100 +35,105 @@
       <section class="form">
         <h2 class="visually-hidden">Форма для конкурса</h2>
         <form class="form-feedback" method="get" action="https://echo.htmlacademy.ru">
-          <div class="user-data">
-            <fieldset>
-              <label for="second-name">Фамилия:</label>
-              <input type="text" id="second-name" name="second-name" placeholder="Укажите фамилию">
-              <label for="first-name">Имя:</label>
-              <input type="text" id="first-name" name="first-name" placeholder="Введите ваше имя">
-              <label for="third-name">Отчество:</label>
-              <input type="text" id="third-name" name="third-name" placeholder="Ну и отчество тоже">
-            </fieldset>
-          </div>
-          <div class="events">
-            <fieldset>
-              <legend>
-                Ваши безбашенные достижения в путешествии
-              </legend>
-              <ul class="events__list user-events">
-                <li class="user-events__list">
-                  <input class="user-events__list--checkbox" type="checkbox" name="selfie" id="selfie" checked>
-                  <label for="selfie">Сделал селфи с акулой</label>
+          <fieldset>
+            <div class="user-data">
+              <div class="form-field">
+                <label class="form-field__label" for="last-name">Фамилия:</label>
+                <input class="form-field__input" type="text" id="last-name" name="last-name" placeholder="Укажите фамилию" required>
+              </div>
+              <div class="form-field">
+                <label class="form-field__label" for="first-name">Имя:</label>
+                <input class="form-field__input" type="text" id="first-name" name="first-name" placeholder="Введите ваше имя" required>
+              </div>
+              <div class="form-field">
+                <label class="form-field__label" for="third-name">Отчество:</label>
+                <input class="form-field__input" type="text" id="third-name" name="third-name" placeholder="Ну и отчество тоже">
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="events">
+              <h3 class="form-title">Ваши безбашенные достижения в путешествии</h3>
+              <ul class="events__list">
+                <li class="events__item form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox" name="selfie" id="selfie" checked>
+                  <label class="form-checkbox__label" for="selfie">Сделал селфи с акулой</label>
                 </li>
-                <li class="user-events__list">
-                  <input class="user-events__list--checkbox" type="checkbox" name="beach" id="beach" checked>
-                  <label for="beach">Обгорел на пляже</label>
+                <li class="events__item form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox" name="beach" id="beach" checked>
+                  <label class="form-checkbox__label" for="beach">Обгорел на пляже</label>
                 </li>
-                <li class="user-events__list">
-                  <input class="user-events__list--checkbox" type="checkbox" name="norris" id="norris">
-                  <label for="norris">Видел Чака Норриса</label>
+                <li class="events__item form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox" name="norris" id="norris">
+                  <label class="form-checkbox__label" for="norris">Видел Чака Норриса</label>
                 </li>
-                <li class="user-events__list">
-                  <input class="user-events__list--checkbox" type="checkbox" name="shopping" id="shopping">
-                  <label for="shopping">Накупил сувениров</label>
+                <li class="events__item form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox" name="shopping" id="shopping">
+                  <label class="form-checkbox__label" for="shopping">Накупил сувениров</label>
                 </li>
-                <li class="user-events__list">
-                  <input class="user-events__list--checkbox" type="checkbox" name="tower" id="tower" checked>
-                  <label for="tower">Удержал башню</label>
+                <li class="events__item form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox" name="tower" id="tower" checked>
+                  <label class="form-checkbox__label" for="tower">Удержал башню</label>
                 </li>
-                <li class="user-events__list">
-                  <input class="user-events__list--checkbox" type="checkbox" name="hotel" id="hotel" checked>
-                  <label for="hotel">Разгромил отель</label>
+                <li class="events__item form-checkbox">
+                  <input class="form-checkbox__input" type="checkbox" name="hotel" id="hotel" checked>
+                  <label class="form-checkbox__label" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
-            </fieldset>
-          </div>
-          <div class="user-data">
-            <fieldset>
-              <label for="phone">Номер телефона</label>
-              <input type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-              <label for="email">Адрес почты</label>
-              <input type="text" id="email" name="email" placeholder="Введите почту*">
-            </fieldset>
-          </div>
-          <div class="application-info">
-            <fieldset>
-              <legend>
-                С каким приложением путешествовали?
-              </legend>
-              <ul class="application-info__list platforms">
-                <li class="platforms__list">
-                  <input class="platforms__list--checkbox" type="checkbox" name="ios" id="ios" checked>
-                  <label for="ios">Pink для iOS</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="user-data">
+              <div class="form-field">
+                <label class="form-field__label" for="phone">Номер телефона</label>
+                <input class="form-field__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form-field">
+                <label class="form-field__label" for="email">Адрес почты</label>
+                <input class="form-field__input" type="text" id="email" name="email" placeholder="Введите почту*" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="application-info">
+              <h3 class="form-title">С каким приложением путешествовали?</h3>
+              <ul class="application-info__list">
+                <li class="application-info__item form-radio">
+                  <input class="form-radio__input" type="checkbox" name="ios" id="ios" checked>
+                  <label class="form-radio__label" for="ios">Pink для iOS</label>
                 </li>
-                <li class="platforms__list">
+                <li class="application-info__item form-radio">
                   <input class="platforms__list--checkbox" type="checkbox" name="android" id="android">
-                  <label for="android">Pink на Android</label>
+                  <label class="form-radio__label" for="android">Pink на Android</label>
                 </li>
-                <li class="platforms__list">
-                  <input class="platforms__list--checkbox" type="checkbox" name="windows" id="windows">
-                  <label for="windows">Windows Phone</label>
+                <li class="application-info__item form-radio">
+                  <input class="form-radio__input" type="checkbox" name="windows" id="windows">
+                  <label class="form-radio__label" for="windows">Windows Phone</label>
                 </li>
               </ul>
-            </fieldset>
-          </div>
-          <div class="user-message">
-            <fieldset>
-              <legend class="visually-hidden">Ваши комментарии</legend>
-              <label for="message">Опишите свои эмоции</label>
-              <textarea id="message" name="message" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
-          </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="user-message form-textarea">
+              <label class="form-textarea__label" for="message">Опишите свои эмоции</label>
+              <textarea class="form-textarea__input" id="message" name="message" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
           <button class="button button-send" type="submit">Отправить форму</button>
           <sup>*</sup> – Обязательные поля
         </form>
       </section>
       <footer class="main-footer">
-        <b class="main-footer__logo footer-logo">Pink</b>
+        <a href="index.html" class="main-footer__logo">Pink</a>
         <ul class="main-footer__social social-icons">
           <li class="social-icons__item">
-            <a href="#" class="social-icons__item--twitter">Twitter</a>
+            <a href="#" class="social-icons__link social-icons__link--twitter">Twitter</a>
           </li>
           <li class="social-icons__item">
-            <a href="#" class="social-icons__item--facebook">Facebook</a>
+            <a href="#" class="social-icons__link social-icons__link--facebook">Facebook</a>
           </li>
           <li class="social-icons__item">
-            <a href="#" class="social-icons__item--youtube">Youtube</a>
+            <a href="#" class="social-icons__link social-icons__link--youtube">Youtube</a>
           </li>
         </ul>
         <span class="main-footer__copyright">
