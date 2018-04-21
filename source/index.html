@@ -7,10 +7,10 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <b class="main-nav__logo nav-logo">Pink</b>
-        <button class="main-nav__toggle nav-toggle" type="button">Меню</button>
+        <b class="main-nav__logo">Pink</b>
+        <button class="main-nav__toggle" type="button">Меню</button>
         <ul class="main-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--active">
+          <li class="nav-list__item active">
             <a>Главная</a>
           </li>
           <li class="nav-list__item">
@@ -29,17 +29,16 @@
       <h1 class="visually-hidden">Главная страница Pink</h1>
       <section class="intro">
         <h2 class="visually-hidden">Где скачать наше приложение</h2>
-        <img class="intro__banner" src="http://placehold.it/150x100" width="320" height="462" alt="Взгляните на жизнь иначе!">
-        <button class="intro__button button" type="button">Скачать приложение</button>
+        <a href="#" class="intro__button button" type="button">Скачать приложение</a>
         <ul class="intro__list platform-list">
           <li class="platform-list__item">
-            <img class="platform-list__icon" src="http://placehold.it/150x100" width="100" height="100" alt="Apple">
+            <a href="#" class="platform-list__item platform-list__item--apple">Apple</a>
           </li>
           <li class="platform-list__item">
-            <img class="platform-list__icon" src="http://placehold.it/150x100" width="100" height="100" alt="Android">
+            <a href="#" class="platform-list__item platform-list__item--android">Android</a>
           </li>
           <li class="platform-list__item">
-            <img class="platform-list__icon" src="http://placehold.it/150x100" width="100" height="100" alt="Windows">
+            <a href="#" class="platform-list__item platform-list__item--windows">Windows</a>
           </li>
         </ul>
         <p class="intro__description">
@@ -47,30 +46,30 @@
         </p>
       </section>
       <section class="information">
-        <h2 class="information__title title">Устали от серости мегаполиса?</h2>
-        <h2 class="information__title title">Нам есть, что вам предложить!</h2>
+        <h2 class="information__title">Устали от серости мегаполиса?</h2>
+        <h2 class="information__title">Нам есть, что вам предложить!</h2>
         <ul class="information__description description-list">
           <li class="description-list__item">
-            <h3 class="description-list__item--title">
+            <h3 class="description-list__title">
               Поднимает настроение
             </h3>
-            <p class="description-list__item--text">
+            <p class="description-list__text">
               Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             </p>
           </li>
           <li class="description-list__item">
-            <h3 class="description-list__item--title">
+            <h3 class="description-list__title">
               Меняет мир вокруг
             </h3>
-            <p class="description-list__item--text">
+            <p class="description-list__text">
               Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             </p>
           </li>
           <li class="description-list__item">
-            <h3 class="description-list__item--title">
+            <h3 class="description-list__title">
               Заводит новых друзей
             </h3>
-            <p class="description-list__item--text">
+            <p class="description-list__text">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>
@@ -78,18 +77,40 @@
         <img class="information-banner" src="http://placehold.it/150x100" width="160" height="300" alt="Всем привет!">
       </section>
       <section class="review">
-        <div class="review-wrapper slider">
+        <div class="review__wrapper slider">
           <h2 class="visually-hidden">Отзывы пользователей</h2>
-          <h3 class="review__title">
-            Николай Петров
-          </h3>
-          <p class="review__info">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
-            познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+          <ul class="slider__list">
+            <li class="slider__item">
+              <h3 class="slider__title">
+                Николай Петров
+              </h3>
+              <p class="slider__info">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="slider__item">
+              <h3 class="slider__title">
+                Николай Петров
+              </h3>
+              <p class="slider__info">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+            <li class="slider__item">
+              <h3 class="slider__title">
+                Николай Петров
+              </h3>
+              <p class="slider__info">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
+                познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+            </li>
+          </ul>
           <ul class="review__buttons point-buttons">
             <li class="point-buttons__item">
-              <button class="point-button point-button--active" type="button">Слайд 1</button>
+              <button class="point-button active" type="button">Слайд 1</button>
             </li>
             <li class="point-buttons__item">
               <button class="point-button" type="button">Слайд 2</button>
@@ -101,49 +122,125 @@
         </div>
       </section>
       <section class="price">
-        <div class="price-wrapper slider">
+        <div class="price__wrapper table-slider">
           <h2 class="visually-hidden">Цены</h2>
-          <span class="label">Хит</span>
-          <table class="price-table">
-            <tr class="price-table__title-row">
-              <td class="price-table__title">
-                Стандарт
-              </td>
-              <td class="price-table__cost">
-                3,99 USD
-              </td>
-            </tr>
-            <tr class="price-table__content-row">
-              <td class="price-table__content">
-                Розовый фильтр
-              </td>
-              <td class="price-table__icon">
-                <span class="yes-icon">Да</span>
-              </td>
-            </tr>
-            <tr class="price-table__content-row">
-              <td class="price-table__content">
-                Смайлики
-              </td>
-              <td class="price-table__icon">
-                <span class="yes-icon">Да</span>
-              </td>
-            </tr>
-            <tr class="price-table__content-row">
-              <td class="price-table__content">
-                Комментарии
-              </td>
-              <td class="price-table__icon">
-                <span class="no-icon">Нет</span>
-              </td>
-            </tr>
-          </table>
+          <ul class="table-slider__list">
+            <li class="table-slider__item">
+              <table class="price-table">
+                <tr class="price-table__title-row">
+                  <span class="label">Хит</span>
+                  <td class="price-table__title">
+                    Стандарт
+                  </td>
+                  <td class="price-table__cost">
+                    3,99 USD
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Розовый фильтр
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="yes-icon">Да</span>
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Смайлики
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="yes-icon">Да</span>
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Комментарии
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="no-icon">Нет</span>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li class="table-slider__item">
+              <table class="price-table">
+                <tr class="price-table__title-row">
+                  <td class="price-table__title">
+                    База
+                  </td>
+                  <td class="price-table__cost">
+                    1,99 USD
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Розовый фильтр
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="yes-icon">Да</span>
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Смайлики
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="no-icon">Нет</span>
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Комментарии
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="no-icon">Нет</span>
+                  </td>
+                </tr>
+              </table>
+            </li>
+            <li class="table-slider__item">
+              <table class="price-table">
+                <tr class="price-table__title-row">
+                  <td class="price-table__title">
+                    Анлим
+                  </td>
+                  <td class="price-table__cost">
+                    9,99 USD
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Розовый фильтр
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="yes-icon">Да</span>
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Смайлики
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="yes-icon">Да</span>
+                  </td>
+                </tr>
+                <tr class="price-table__content-row">
+                  <td class="price-table__content">
+                    Комментарии
+                  </td>
+                  <td class="price-table__icon">
+                    <span class="yes-icon">Да</span>
+                  </td>
+                </tr>
+              </table>
+            </li>
+          </ul>
           <ul class="price__buttons point-buttons">
             <li class="point-buttons__item">
               <button class="point-button" type="button">Слайд 1</button>
             </li>
             <li class="point-buttons__item">
-              <button class="point-button point-button--active" type="button">Слайд 2</button>
+              <button class="point-button active" type="button">Слайд 2</button>
             </li>
             <li class="point-buttons__item">
               <button class="point-button" type="button">Слайд 3</button>
@@ -152,25 +249,31 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title title">
+        <h2 class="contacts__title">
           Остались вопросы? Свяжитесь с нами!
         </h2>
         <ul class="contacts__list text-list">
           <li class="text-list__item">
-            Звоните:
-            <span class="text-list__item--content">
+            <span class="text-list__title">
+              Звоните:
+            </span>
+            <span class="text-list__content">
               +7 (812) 555-66-66
             </span>
           </li>
           <li class="text-list__item">
-            Пишите:
-            <span class="text-list__item--content">
+            <span class="text-list__title">
+              Пишите:
+            </span>
+            <span class="text-list__content">
               mail@htmlacademy.ru
             </span>
           </li>
           <li class="text-list__item">
-            Приезжайте в гости:
-            <span class="text-list__item--content">
+            <span class="text-list__title">
+              Приезжайте в гости:
+            </span>
+            <span class="text-list__content">
               ул. Большая Конюшенная, 19/8
             </span>
           </li>
