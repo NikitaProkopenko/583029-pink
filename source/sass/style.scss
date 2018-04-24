@@ -1,4 +1,5 @@
 @import "base/normalize";
+@import "base/scaffolding";
 @import "layout/main-footer";
 @import "layout/page-header";
 @import "layout/page-main";
@@ -47,30 +48,3 @@
 @import "components/user-data";
 @import "components/user-message";
 @import "components/yes-icon";
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff2") format("woff2"),
-    url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../fonts/opensansbold.woff2") format("woff2"),
-    url("../fonts/opensansbold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("../fonts/opensanslight.woff2") format("woff2"),
-    url("../fonts/opensanslight.woff") format("woff");
-}
-
-body {
-  margin: 0 auto;
-  padding: 0;
-
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-}
