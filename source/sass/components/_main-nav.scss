@@ -16,7 +16,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 24px 0;
 }
 
 .main-nav__logo::before {
@@ -27,6 +26,17 @@
   width: 80px;
   height: 30px;
   background-image: url("../../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.main-nav__toggle {
+  width: 25px;
+  height: 25px;
+  padding: 32px 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  background-image: url("../../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
