@@ -1,3 +1,20 @@
 .container {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $tablet-width;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    width: $desctop-width;
+    padding: 0 10px;
+  }
+}
+

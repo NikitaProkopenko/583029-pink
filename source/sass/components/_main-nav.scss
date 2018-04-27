@@ -2,9 +2,32 @@
 
 .main-nav {
   background-color: $bg-dark-blue;
-  color: $text-white;
+  position: relative;
+  display: flex;
+  flex-flow: column;
 
   a {
     text-decoration: none;
+    color: $text-white;
   }
 }
+
+.main-nav__controls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.main-nav__logo::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  width: 80px;
+  height: 30px;
+  background-image: url("../../img/logo-pink-white-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
