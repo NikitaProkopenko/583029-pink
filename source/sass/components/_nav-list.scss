@@ -14,5 +14,31 @@
 }
 
 .nav-list__item {
-  padding: 16px 0;
+  padding: 15px 0;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
 }
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    width: 622px;
+    flex-flow: row wrap;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  .nav-list__item {
+    border-top: none;
+    border-bottom: none;
+    padding-right: 80px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+
+  .nav-list__item:last-child {
+    padding-right: 0;
+  }
+}
+

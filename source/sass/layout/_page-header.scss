@@ -3,3 +3,10 @@
 .page-header {
   background-color: $bg-dark-blue;
 }
+
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    opacity: 0.3;
+  }
+}
