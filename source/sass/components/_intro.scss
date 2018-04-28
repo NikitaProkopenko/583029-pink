@@ -3,4 +3,15 @@
 .intro {
   background-color: $bg-dark-blue;
   color: $text-white;
+  background-image: url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat,
+    no-repeat;
+  background-position: left 109px,
+    center -65px;
+
+  .container {
+    padding-top: 462px;
+  }
 }
+
