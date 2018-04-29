@@ -12,6 +12,12 @@
   }
 }
 
+.main-nav__wrapper {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-nav__controls {
   display: flex;
   flex-flow: row wrap;
@@ -72,5 +78,11 @@
   .main-nav__logo::before {
     left: 10px;
   }
+
+  .main-nav__wrapper {
+    width: $desktop-width;
+    padding: 0 10px;
+  }
 }
+
 

@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-.container__nav {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @media (min-width: $tablet-width) {
   .container {
     width: $tablet-width;
@@ -22,10 +16,6 @@
     width: $desktop-width;
     padding: 0 10px;
   }
-
-  .container__nav {
-    width: $desktop-width;
-    padding: 0 10px;
-  }
 }
+
 
