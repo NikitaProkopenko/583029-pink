@@ -1,11 +1,23 @@
 //styles for block
 
-.slider {
-  .slider__item {
-    display: none;
+.slider__item {
+  display: none;
+  text-align: center;
+}
 
-    &.current {
-      display: block;
-    }
-  }
+.current {
+  display: block;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
 }

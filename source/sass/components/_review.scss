@@ -1,1 +1,16 @@
 //styles for block
+
+.review__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.review__buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
