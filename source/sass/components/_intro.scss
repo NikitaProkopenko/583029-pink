@@ -1,17 +1,26 @@
 //styles for block
 
 .intro {
+  margin-top: -65px;
+  padding-top: 462px;
   background-color: $bg-dark-blue;
   color: $text-white;
   background-image: url("../../img/iphone-hand-mobile@1x.png"),
     url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat,
     no-repeat;
-  background-position: left 109px,
-    center -65px;
+  background-position: left 175px,
+    center 0;
+}
 
-  .container {
-    padding-top: 462px;
-  }
+.intro__button {
+  width: 280px;
+  padding: 15px 0;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+  color: $text-white;
+  font-size: 18px;
+  line-height: 18px;
 }
 
