@@ -1,1 +1,17 @@
 //styles for block
+
+.description-list__item {
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.description-list__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.description-list__text {
+  font-size: 14px;
+  line-height: 24px;
+}
