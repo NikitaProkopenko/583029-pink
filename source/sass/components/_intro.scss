@@ -1,22 +1,20 @@
 //styles for block
 
 .intro {
-  background-color: $bg-dark-blue;
-  margin-bottom: 40px;
-}
-
-.intro__wrapper {
-  width: 320px;
-  margin-top: -65px;
   padding-top: 462px;
-  background-color: $bg-dark-blue;
+  margin-bottom: 40px;
   color: $text-white;
+  background-color: $bg-dark-blue;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat,
     no-repeat;
   background-position: left 175px,
     center 0;
+}
+
+.intro__title {
+  display: none;
 }
 
 .intro__button {
@@ -40,6 +38,49 @@
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-width: 660px;
+    height: 681px;
+    padding-top: 0;
+    background-image: url("../img/iphone-hand-mobile@1x.png"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat,
+      no-repeat;
+    background-position: center 124px,
+      center 0;
+    background-size: 470px 557px, 660px 681px;
+  }
+
+  .intro__wrapper {
+    width: 300px;
+    margin: 0;
+    padding-top: 150px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .intro__title {
+    width: 200px;
+    margin-bottom: 4px;
+    display: block;
+    font-family: "Open Sans Light", "Arial", sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .intro__button {
+    width: 290px;
+    margin-bottom: 47px;
+  }
+
+  .intro__description {
+    font-size: 18px;
+  }
 }
 
 

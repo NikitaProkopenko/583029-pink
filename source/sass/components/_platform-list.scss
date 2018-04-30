@@ -29,3 +29,9 @@ a.platform-list__item--android {
 a.platform-list__item--windows {
   background-image: url("../../img/logo-microsoft.svg");
 }
+
+@media (min-width: $tablet-width) {
+  .platform-list {
+    margin-bottom: 34px;
+  }
+}

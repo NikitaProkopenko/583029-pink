@@ -7,7 +7,7 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
+    min-width: $tablet-width;
   }
 }
 
