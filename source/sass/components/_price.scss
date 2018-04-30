@@ -6,8 +6,12 @@
 
 .price__wrapper {
   padding-top: 90px;
+  margin-bottom: 40px;
   min-width: 320px;
   overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .price__buttons {
