@@ -1,1 +1,22 @@
 //styles for block
+.main-footer {
+  display: none;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__social {
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    display: block;
+    margin-bottom: 33px;
+  }
+}

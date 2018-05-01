@@ -1,1 +1,7 @@
 //styles for block
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 180px;
+}
