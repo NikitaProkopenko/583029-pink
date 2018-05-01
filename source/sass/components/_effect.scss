@@ -1,0 +1,38 @@
+//styles for block
+
+.effect {
+  display: none;
+}
+
+.effect__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.effect__description {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.effect__link {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .effect__wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 310px;
+  }
+}
