@@ -3,10 +3,12 @@
 .slider__item {
   display: none;
   text-align: center;
-}
 
-.current {
-  display: block;
+  &.current {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 }
 
 .slider__list {
@@ -20,4 +22,39 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
+}
+
+.slider__title-info {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    margin-bottom: 26px;
+  }
+
+  .slider__title {
+    order: 2;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider__info {
+    order: 1;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0 0 36px 0;
+    padding: 0;
+  }
+
+  .slider__title-info {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
 }

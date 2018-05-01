@@ -8,3 +8,13 @@
   flex-flow: row nowrap;
   justify-content: center;
 }
+
+.table-slider__item--description {
+  align-self: flex-end;
+}
+
+@media (min-width: $tablet-width) {
+  .table-slider__list {
+    margin-bottom: 65px;
+  }
+}

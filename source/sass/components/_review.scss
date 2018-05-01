@@ -18,3 +18,9 @@
   flex-flow: row wrap;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    margin-bottom: 13px;
+  }
+}

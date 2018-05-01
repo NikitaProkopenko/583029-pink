@@ -23,50 +23,8 @@
   justify-content: center;
 }
 
-.price-table {
-  width: 280px;
-  border-collapse: collapse;
-  border-right: 2px solid #e5e5e5;
-  border-left: 2px solid #e5e5e5;
-}
-
-.price-table__title-row {
-  width: 280px;
-  display: flex;
-  flex-flow: column;
-  color: $text-white;
-  text-align: center;
-  background-color: $bg-dark-blue;
-}
-
-.price-table__title {
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding-top: 16px;
-}
-
-.price-table__cost {
-  font-family: "Open Sans Light", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  padding-bottom: 20px;
-}
-
-.price-table__content-row {
-  width: 280px;
-  display: flex;
-  letter-spacing: 0.01em;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  background-color: $bg-white;
-  border-bottom: 2px solid #e5e5e5;
-}
-
-.price-table__content {
-  font-size: 14px;
-  line-height: 30px;
-  text-transform: uppercase;
-  padding: 15px 0 14px 21px;
+@media (min-width: $tablet-width) {
+  .price__buttons {
+    display: none;
+  }
 }
