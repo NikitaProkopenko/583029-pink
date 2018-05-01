@@ -1,7 +1,6 @@
 //styles for block
 
 .main-nav {
-  background-color: $bg-dark-blue;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -13,7 +12,8 @@
 }
 
 .main-nav__wrapper {
-  margin: 0 0 -65px 0;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   box-sizing: border-box;
 }
