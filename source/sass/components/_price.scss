@@ -24,7 +24,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price__wrapper {
+    margin-bottom: 47px;
+  }
+
   .price__buttons {
     display: none;
   }
 }
+

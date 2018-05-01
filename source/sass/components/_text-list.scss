@@ -23,3 +23,17 @@
   color: #d22856;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .text-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 13px;
+  }
+
+  .text-list__item:nth-child(3) {
+    width: 280px;
+    padding-top: 30px;
+  }
+}
