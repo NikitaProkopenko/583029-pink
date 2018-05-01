@@ -35,3 +35,9 @@ a.platform-list__item--windows {
     margin-bottom: 34px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .platform-list {
+    margin-bottom: 52px;
+  }
+}
