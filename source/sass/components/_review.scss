@@ -24,3 +24,15 @@
     margin-bottom: 13px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review__buttons {
+    display: none;
+  }
+
+  .review__wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+  }
+}

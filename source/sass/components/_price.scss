@@ -33,3 +33,9 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .price__wrapper {
+    padding-top: 152px;
+    padding-bottom: 34px;
+  }
+}

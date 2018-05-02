@@ -102,3 +102,45 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .price-table {
+    width: 230px;
+  }
+
+  .price-table__title-row {
+    width: 230px;
+  }
+
+  .price-table__content-row {
+    width: 230px;
+
+    &--description {
+      width: 230px;
+    }
+  }
+
+  .price-table__title {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 17px;
+  }
+
+  .price-table__cost {
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 19px;
+  }
+
+  .price-table__content--description {
+    font-size: 18px;
+  }
+
+  .price-table__icon {
+    padding: 14px 0 14px 0;
+  }
+
+  .price-table__content--description {
+    padding: 14px 0 14px 18px;
+  }
+}

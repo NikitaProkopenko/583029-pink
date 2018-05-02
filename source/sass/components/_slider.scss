@@ -28,6 +28,10 @@
   display: none;
 }
 
+.slider__button {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .slider__list {
@@ -56,5 +60,25 @@
     line-height: 30px;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__list {
+    width: 700px;
+    padding-left: 10px;
+  }
+
+  .slider__button {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .slider__title {
+    font-size: 24px;
+  }
+
+  .slider__title-info {
+    font-size: 18px;
   }
 }
