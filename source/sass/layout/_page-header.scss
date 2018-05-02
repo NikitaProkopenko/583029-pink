@@ -1,5 +1,7 @@
 //styles for block
 .page-header {
+  position: relative;
+  z-index: 10;
   background-color: $bg-dark-blue;
   margin-bottom: -65px;
 }
@@ -7,6 +9,8 @@
 @media (min-width: $desktop-width) {
   .page-header {
     margin-bottom: -110px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
+
 

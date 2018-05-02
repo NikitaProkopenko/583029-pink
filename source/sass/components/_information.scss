@@ -17,13 +17,19 @@
   align-items: center;
 }
 
+.information__banner {
+  &--desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .information__wrapper {
     flex-flow: row wrap;
     justify-content: space-between;
   }
 
-  .information-banner {
+  .information__banner {
     width: 271px;
     height: 483px;
     align-self: flex-end;
@@ -31,5 +37,31 @@
 
   .information__description {
     padding-top: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information__wrapper {
+    justify-content: center;
+  }
+
+  .information__banner {
+    width: 300px;
+    height: 300px;
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .information__description {
+    padding-top: 26px;
+  }
+
+  .information__banner-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 940px;
+    justify-content: space-between;
   }
 }

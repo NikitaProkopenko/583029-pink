@@ -28,3 +28,27 @@
     text-align: left;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .description-list {
+    flex-flow: row wrap;
+    width: 880px;
+  }
+
+  .description-list__item {
+    width: 240px;
+    text-align: center;
+  }
+
+  .description-list__title {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .description-list__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
