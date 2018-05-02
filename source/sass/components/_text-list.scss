@@ -37,3 +37,27 @@
     padding-top: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .text-list {
+    width: 940px;
+    margin-bottom: 6px;
+  }
+
+  .text-list__item:nth-child(3) {
+    padding-top: 0px;
+    order: 2;
+  }
+
+  .text-list__item:nth-child(1) {
+    order: 1;
+  }
+
+  .text-list__item:nth-child(2) {
+    order: 3;
+  }
+
+  .text-list__title {
+    margin-bottom: 20px;
+  }
+}

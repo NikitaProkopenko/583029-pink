@@ -35,3 +35,19 @@
     height: 374px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 60px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    margin-bottom: 53px;
+  }
+
+  .contacts__map {
+    width: 1200px;
+    height: 500px;
+  }
+}

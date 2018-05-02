@@ -20,3 +20,9 @@
     margin-bottom: 33px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    margin-bottom: 80px;
+  }
+}
