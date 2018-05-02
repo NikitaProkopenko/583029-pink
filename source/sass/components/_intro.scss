@@ -44,6 +44,7 @@
   .intro {
     min-width: 660px;
     padding-top: 0;
+    padding-bottom: 75px;
     margin-bottom: 60px;
     background-image: url("../img/iphone-hand-mobile@1x.png"),
       url("../img/bg-back-mobile@1x.jpg");
@@ -86,6 +87,7 @@
 @media (min-width: $desktop-width) {
   .intro {
     background-size: 470px 557px, 1200px 853px;
+    padding-bottom: 0;
     margin-bottom: 85px;
   }
 
