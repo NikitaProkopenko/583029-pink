@@ -11,10 +11,23 @@
     no-repeat;
   background-position: left 175px,
     center 0;
+
+  &--photo {
+    padding-top: 235px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-position: 0 center;
+    background-size: 320px 235px;
+  }
 }
 
 .intro__title {
   display: none;
+
+  &--photo {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .intro__button {
