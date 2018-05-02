@@ -33,6 +33,7 @@
   .description-list {
     flex-flow: row wrap;
     width: 880px;
+    justify-content: space-between;
   }
 
   .description-list__item {

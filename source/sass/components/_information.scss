@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .information {
+    margin-bottom: 0px;
+  }
+
   .information__wrapper {
     justify-content: center;
   }
