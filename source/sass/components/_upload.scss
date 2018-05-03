@@ -1,7 +1,36 @@
 //styles for block
 
-.upload {
-  .upload__wrapper {
-    background-color: $bg-grey;
+.upload__wrapper {
+  background-color: $bg-grey;
+}
+
+.upload__description-wrapper {
+  margin-bottom: 50px;
+}
+
+.upload__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  &--first {
+    padding-bottom: 5px;
   }
+}
+
+.upload__photo {
+  padding-top: 21px;
+}
+
+.upload__icons-list {
+  margin: 0 0 37px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.upload__control-button {
+  color: #d22856;
+  border-color: #d22856;
 }
