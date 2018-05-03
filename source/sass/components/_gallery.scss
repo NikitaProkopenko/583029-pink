@@ -1,6 +1,67 @@
 //styles for block
+.gallery {
+  list-style: none;
+}
+
+.gallery__item {
+  position: relative;
+  margin-bottom: 20px;
+}
 
 .gallery__post {
-  list-style: none;
+  padding: 0 20px;
   background-color: $bg-grey;
+}
+
+.gallery__post-label {
+  width: 140px;
+  padding: 7px 0;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.gallery__post-title {
+  margin: 0 0 -3px 0;
+  padding-top: 27px;
+}
+
+.gallery__post-time {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.gallery__post-description {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__item-image {
+    margin-bottom: -24px;
+}
+
+.gallery__post-author {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery__post-controls {
+  margin: 0;
+  padding-bottom: 18px;
+}
+
+.gallery__post-control-text {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #d22856;
 }
