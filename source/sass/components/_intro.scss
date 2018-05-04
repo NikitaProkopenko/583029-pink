@@ -70,6 +70,13 @@
     background-position: center 124px,
       center 0;
     background-size: 470px 557px, 660px 681px;
+
+    &--photo {
+      padding-top: 319px;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: 0 center;
+      background-size: 660px 395px;
+    }
   }
 
   .intro__wrapper {
@@ -89,6 +96,12 @@
     font-size: 40px;
     line-height: 50px;
     text-align: center;
+
+    &--photo {
+      margin-top: -181px;
+      width: 620px;
+      font-size: 50px;
+    }
   }
 
   .intro__button {
