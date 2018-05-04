@@ -1,7 +1,11 @@
 //styles for block
+.upload {
+  margin-bottom: 60px;
+}
 
 .upload__wrapper {
   background-color: $bg-grey;
+  padding-bottom: 42px;
 }
 
 .upload__description-wrapper {
@@ -22,6 +26,7 @@
 
 .upload__photo {
   padding-top: 21px;
+  margin-bottom: 40px;
 }
 
 .upload__icons-list {
@@ -31,6 +36,14 @@
 }
 
 .upload__control-button {
-  color: #d22856;
-  border-color: #d22856;
+  &--post {
+    margin-bottom: 15px;
+    color: #d22856;
+    border-color: #d22856;
+  }
+
+  &--cancel {
+    color: #dddfe0;
+    border-color: #dddfe0;
+  }
 }

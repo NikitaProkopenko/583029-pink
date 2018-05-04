@@ -1,12 +1,14 @@
 //styles for block
 .main-footer {
-  display: none;
+  display: block;
+  &--index {
+    display: none;
+  }
 }
 
 .main-footer__wrapper {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: column;
   align-items: center;
 }
 
@@ -14,10 +16,42 @@
   list-style: none;
 }
 
+.main-footer__logo {
+  margin-bottom: 46px;
+}
+
+.main-footer__social {
+  margin-bottom: 30px;
+}
+
+.main-footer__copyright {
+  margin-bottom: 44px;
+}
+
 @media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
   .main-footer {
-    display: block;
     margin-bottom: 33px;
+
+    &--index {
+      display: block;
+    }
+  }
+
+  .main-footer__logo {
+    margin-bottom: 0;
+  }
+
+  .main-footer__social {
+    margin-bottom: 0;
+  }
+
+  .main-footer__copyright {
+    margin-bottom: 0;
   }
 }
 
