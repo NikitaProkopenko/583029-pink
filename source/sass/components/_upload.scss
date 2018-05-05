@@ -36,10 +36,21 @@
 }
 
 .upload__line {
-  min-width: 320px;
   height: 1px;
   background-color: #dddfe0;
   margin-bottom: 39px;
+
+  &--big {
+    display: none;
+  }
+}
+
+.upload__control-wrapper {
+  display: block;
+
+  &--big {
+    display: none;
+  }
 }
 
 .upload__control-button {
@@ -60,7 +71,55 @@
     font-size: 18px;
   }
 
+  .upload__wrapper {
+    padding-bottom: 55px;
+  }
+
+  .upload__icons-list {
+    width: 278px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+  }
+
   .upload__description-wrapper {
     margin-bottom: 74px;
+  }
+
+  .upload__line {
+    display: none;
+
+    &--big {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  .upload__photo {
+    width: 300px;
+    height: 400px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .upload__control-wrapper {
+    display: none;
+
+    &--big {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
+  .upload__control-button {
+    width: 260px;
+    font-family: "Open Sans Bold";
+    font-size: 18px;
+    line-height: 18px;
+
+    &--post {
+      margin-bottom: 25px;
+    }
   }
 }

@@ -221,18 +221,53 @@
         </div>
         <div class="upload__wrapper">
           <div class="container">
-            <img class="upload__photo" src="http://placehold.it/150x100" width="280" height="374" alt="Фотография пользователя">
-            <ul class="upload__icons-list control-icons">
-              <li class="control-icons__item">
-                <button class="control-icons__button" type="button">Обрезать</button>
-              </li>
-              <li class="control-icons__item">
-                <button class="control-icons__button" type="button">Заливка</button>
-              </li>
-              <li class="control-icons__item">
-                <button class="control-icons__button" type="button">Контраст</button>
-              </li>
-            </ul>
+            <div class="control-icons__wrapper">
+              <img class="upload__photo" src="http://placehold.it/150x100" width="280" height="374" alt="Фотография пользователя">
+              <div class="control-icons__settings-wrapper">
+                <ul class="upload__icons-list control-icons">
+                  <li class="control-icons__item">
+                    <button class="control-icons__button" type="button">Обрезать</button>
+                    <div class="range-control range-control--big range-control--crop">
+                      <div class="range-control__scale"></div>
+                      <div class="range-control__toggle range-control__toggle--crop">
+                        <span class="visually-hidden">Управление</span>
+                      </div>
+                    </div>
+                    <div class="upload__line upload__line--big">
+                      <span class="visually-hidden">Разделитель</span>
+                    </div>
+                  </li>
+                  <li class="control-icons__item">
+                    <button class="control-icons__button" type="button">Заливка</button>
+                    <div class="range-control range-control--big range-control--fill">
+                      <div class="range-control__scale"></div>
+                      <div class="range-control__toggle range-control__toggle--fill">
+                        <span class="visually-hidden">Управление</span>
+                      </div>
+                    </div>
+                    <div class="upload__line upload__line--big">
+                      <span class="visually-hidden">Разделитель</span>
+                    </div>
+                  </li>
+                  <li class="control-icons__item">
+                    <button class="control-icons__button" type="button">Контраст</button>
+                    <div class="range-control range-control--big range-control--contrast">
+                      <div class="range-control__scale"></div>
+                      <div class="range-control__toggle range-control__toggle--contrast">
+                        <span class="visually-hidden">Управление</span>
+                      </div>
+                    </div>
+                    <div class="upload__line upload__line--big">
+                      <span class="visually-hidden">Разделитель</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="upload__control-wrapper upload__control-wrapper--big">
+                  <button class="upload__control-button upload__control-button--post button" type="submit">Запостить</button>
+                  <button class="upload__control-button upload__control-button--cancel button" type="reset">Отмена</button>
+                </div>
+              </div>
+            </div>
             <div class="range-control">
               <div class="range-control__scale"></div>
               <div class="range-control__toggle">
@@ -243,7 +278,7 @@
           <div class="upload__line">
             <span class="visually-hidden">Разделитель</span>
           </div>
-          <div class="container">
+          <div class="upload__control-wrapper container">
             <button class="upload__control-button upload__control-button--post button" type="submit">Запостить</button>
             <button class="upload__control-button upload__control-button--cancel button" type="reset">Отмена</button>
           </div>

@@ -1,9 +1,14 @@
 //styles for block
 .range-control {
+  box-sizing: border-box;
   position: relative;
   padding: 0 18px;
   margin-top: 45px;
   margin-bottom: 34px;
+
+  &--big {
+    display: none;
+  }
 }
 
 .range-control__scale {
@@ -22,4 +27,30 @@
   background-color: #f2f2f2;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .range-control {
+    display: none;
+
+    &--big {
+      display: block;
+      padding-left: 53px;
+      margin: 0 0 34px 0;
+    }
+  }
+
+  .range-control__toggle {
+    &--crop {
+      right: 22%;
+    }
+
+    &--fill {
+      left: 30%;
+    }
+
+    &--contrast {
+      right: 40%;
+    }
+  }
 }
