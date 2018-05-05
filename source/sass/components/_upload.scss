@@ -35,6 +35,13 @@
   list-style: none;
 }
 
+.upload__line {
+  min-width: 320px;
+  height: 1px;
+  background-color: #dddfe0;
+  margin-bottom: 39px;
+}
+
 .upload__control-button {
   &--post {
     margin-bottom: 15px;
@@ -45,5 +52,15 @@
   &--cancel {
     color: #dddfe0;
     border-color: #dddfe0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload__description {
+    font-size: 18px;
+  }
+
+  .upload__description-wrapper {
+    margin-bottom: 74px;
   }
 }

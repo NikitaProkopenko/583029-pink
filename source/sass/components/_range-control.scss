@@ -1,4 +1,25 @@
 //styles for block
 .range-control {
-  margin-bottom: 118px;
+  position: relative;
+  padding: 0 18px;
+  margin-top: 45px;
+  margin-bottom: 34px;
+}
+
+.range-control__scale {
+  height: 2px;
+  background: #283645;
+  margin-bottom: 8px;
+}
+
+.range-control__toggle {
+  position: absolute;
+  top: -7px;
+  right: 19%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #cd2855;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
 }
