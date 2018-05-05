@@ -114,12 +114,47 @@
 
   .upload__control-button {
     width: 260px;
-    font-family: "Open Sans Bold";
+    font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 18px;
     line-height: 18px;
 
     &--post {
       margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__description-wrapper {
+    margin-bottom: 70px;
+  }
+
+  .upload__wrapper {
+    background-color: $bg-white;
+  }
+
+  .upload__icons-list {
+    width: 420px;
+  }
+
+  .upload__control-button {
+    width: 180px;
+
+    &--post {
+      margin-bottom: 0;
+    }
+  }
+
+  .upload__photo {
+    padding-left: 20px;
+  }
+
+  .upload__control-wrapper {
+    &--big {
+      width: 420px;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

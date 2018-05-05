@@ -36,3 +36,14 @@
     margin-top: 34px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .control-icons__wrapper {
+    background-color: $bg-grey;
+    padding: 58px 60px;
+  }
+
+  .control-icons__item {
+    margin-top: 17px;
+  }
+}

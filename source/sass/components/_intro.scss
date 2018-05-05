@@ -23,6 +23,8 @@
 
 .intro__title {
   display: none;
+  margin-right: auto;
+  margin-left: auto;
 
   &--photo {
     display: block;
@@ -120,6 +122,14 @@
     background-size: 470px 557px, 1200px 853px;
     padding-bottom: 0;
     margin-bottom: 85px;
+
+    &--photo {
+      padding-top: 395px;
+      background-image: url("../img/bg-back-mobile@1x.jpg");
+      background-position: 0 center;
+      background-size: 1200px 395px;
+      margin-bottom: 92px;
+    }
   }
 
   .intro__wrapper {
@@ -129,8 +139,11 @@
   .intro__title {
     font-size: 50px;
     line-height: 58px;
-    width: 300px;
     margin-bottom: 28px;
+
+    &--photo {
+      margin-top: -220px;
+    }
   }
 
   .intro__button {

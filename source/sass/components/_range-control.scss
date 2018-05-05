@@ -54,3 +54,26 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .range-control {
+    &--big {
+      padding-left: 100px;
+      padding-right: 30px;
+    }
+  }
+
+  .range-control__toggle {
+    &--crop {
+      left: 41%;
+    }
+
+    &--fill {
+      left: 83%;
+    }
+
+    &--contrast {
+      right: 34%;
+    }
+  }
+}

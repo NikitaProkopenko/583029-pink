@@ -27,3 +27,20 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photo {
+    margin-bottom: 17px;
+  }
+
+  .photo__description {
+    padding: 0 153px;
+    margin-bottom: 86px;
+  }
+
+  .photo__list {
+    &--day {
+      margin-bottom: 0;
+    }
+  }
+}
