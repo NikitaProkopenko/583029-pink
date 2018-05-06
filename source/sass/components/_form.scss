@@ -41,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    margin-bottom: 95px;
+  }
+  
   .form__description {
     font-size: 18px;
     line-height: 30px;
@@ -50,5 +54,20 @@
     &--big {
       display: block;
     }
+  }
+
+  .form__title {
+    padding-top: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 42px;
+    margin-top: -17px;
+    background-color: $bg-white;
+  }
+
+  .form__control {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }

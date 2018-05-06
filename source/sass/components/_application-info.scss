@@ -19,3 +19,31 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .application-info {
+    background-color: $bg-white;
+    margin-bottom: 66px;
+  }
+
+  .application-info__wrapper {
+    width: 620px;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 2px solid #e5e5e5;
+  }
+
+  .application-info__list {
+    margin-right: auto;
+  }
+
+  .application-info__item {
+
+    &:last-child {
+      padding-bottom: 63px;
+    }
+  }
+}

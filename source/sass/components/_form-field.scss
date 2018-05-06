@@ -28,14 +28,31 @@
     flex-flow: row;
     align-items: center;
     margin-bottom: 56px;
+
+    &--user-data {
+      flex-flow: row wrap;
+      width: 100%;
+      margin-bottom: 23px;
+    }
   }
 
   .form-field__input {
     width: 100%;
+
+    &--user-data {
+      order: 1;
+      margin-bottom: 13px;
+    }
   }
 
   .form-field__label {
     padding-left: 0;
     padding-right: 19px;
+
+    &--user-data {
+      order: 2;
+      padding-left: 19px;
+      padding-right: 0;
+    }
   }
 }

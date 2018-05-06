@@ -23,3 +23,9 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
+@media (min-width: $tablet-width) {
+  .form-radio__label {
+    padding-left: 57px;
+  }
+}

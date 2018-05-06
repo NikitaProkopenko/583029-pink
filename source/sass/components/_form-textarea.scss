@@ -21,3 +21,28 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
 }
+
+@media (min-width: $tablet-width) {
+  .form-textarea__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 60px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-textarea__input {
+    width: 100%;
+    margin-bottom: 46px;
+    padding-bottom: 0;
+  }
+
+  .form-textarea__label {
+    padding-top: 0;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 19px;
+    margin-top: -17px;
+    background-color: $bg-white;
+  }
+}

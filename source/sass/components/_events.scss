@@ -18,3 +18,22 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .events {
+    background-color: $bg-white;
+    margin-bottom: 0;
+  }
+
+  .events__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 60px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .events__list {
+    margin-right: auto;
+  }
+}

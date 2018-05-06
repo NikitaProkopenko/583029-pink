@@ -11,3 +11,10 @@
   color: $text-white;
   border-radius: 3px;
 }
+
+@media (min-width: $tablet-width) {
+  .button-send {
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
