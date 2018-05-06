@@ -22,10 +22,13 @@
   border: 2px solid #e5e5e5;
 }
 
+.form-textarea__wrapper {
+  display: flex;
+  flex-flow: column;
+}
+
 @media (min-width: $tablet-width) {
   .form-textarea__wrapper {
-    display: flex;
-    flex-flow: column;
     align-items: center;
     padding: 0 60px;
     border: 2px solid #e5e5e5;
