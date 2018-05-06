@@ -22,3 +22,20 @@
   line-height: 30px;
   border: 2px solid #e5e5e5;
 }
+
+@media (min-width: $tablet-width) {
+  .form-field {
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  .form-field__input {
+    width: 100%;
+  }
+
+  .form-field__label {
+    padding-left: 0;
+    padding-right: 19px;
+  }
+}

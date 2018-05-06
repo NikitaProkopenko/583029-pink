@@ -75,7 +75,8 @@
       center 0;
     background-size: 470px 557px, 660px 681px;
 
-    &--photo {
+    &--photo,
+    &--form {
       padding-top: 319px;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: 0 center;
@@ -102,7 +103,8 @@
     line-height: 50px;
     text-align: center;
 
-    &--photo {
+    &--photo,
+    &--form {
       margin-top: -181px;
       width: 620px;
       font-size: 50px;
@@ -125,7 +127,8 @@
     padding-bottom: 0;
     margin-bottom: 85px;
 
-    &--photo {
+    &--photo,
+    &--form {
       padding-top: 395px;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: 0 center;
@@ -143,7 +146,8 @@
     line-height: 58px;
     margin-bottom: 28px;
 
-    &--photo {
+    &--photo,
+    &--form {
       margin-top: -220px;
     }
   }

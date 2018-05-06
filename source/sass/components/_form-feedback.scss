@@ -1,4 +1,9 @@
 //styles for block
+.form-feedback {
+  display: flex;
+  flex-flow: column;
+}
+
 .form-feedback__fieldset {
   margin: 0;
   padding: 0;
