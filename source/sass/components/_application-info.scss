@@ -2,4 +2,20 @@
 
 .application-info {
   background-color: $bg-grey;
+  margin-bottom: 32px;
+}
+
+.application-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.application-info__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    padding-bottom: 45px;
+    margin-bottom: 0;
+  }
 }

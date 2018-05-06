@@ -1,5 +1,20 @@
 //styles for block
-
 .events {
   background-color: $bg-grey;
+  margin-bottom: 32px;
+}
+
+.events__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.events__item {
+  margin-bottom: 50px;
+
+  &:last-child {
+    padding-bottom: 45px;
+    margin-bottom: 0;
+  }
 }

@@ -12,7 +12,8 @@
   background-position: left 175px,
     center 0;
 
-  &--photo {
+  &--photo,
+  &--form {
     margin-bottom: 46px;
     padding-top: 235px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -26,7 +27,8 @@
   margin-right: auto;
   margin-left: auto;
 
-  &--photo {
+  &--photo,
+  &--form {
     display: block;
     margin-top: -140px;
     padding: 0;
