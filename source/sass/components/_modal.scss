@@ -1,1 +1,52 @@
 //styles for block
+.modal {
+  display: none;
+  width: 320px;
+  position: fixed;
+  top: 100px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  z-index: 20;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.modal__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__description {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__button {
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: rgba(255, 255, 255, 0);
+  color: $text-white;
+  border-radius: 3px;
+}
+
+.modal__button-wrapper {
+  display: flex;
+  flex-flow: column;
+  background-color: $bg-grey;
+  padding: 48px 20px;
+}
+
+.modal__show {
+  display: block;
+}

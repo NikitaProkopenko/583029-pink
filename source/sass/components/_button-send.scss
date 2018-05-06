@@ -1,1 +1,13 @@
 //styles for block
+.button-send {
+  width: 280px;
+  margin-bottom: 37px;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: rgba(255, 255, 255, 0);
+  color: $text-white;
+  border-radius: 3px;
+}

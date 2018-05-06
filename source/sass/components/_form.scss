@@ -1,4 +1,8 @@
 //styles for block
+.form {
+  margin-bottom: 74px;
+}
+
 .form__description {
   text-align: center;
   padding: 0;
@@ -14,4 +18,20 @@
   font-weight: lighter;
   color: #d22856;
   text-align: center;
+}
+
+.form__control {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.form__require {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.form__require-marker {
+  color: #d22856;
 }
