@@ -5,3 +5,9 @@
   display: flex;
   flex-flow: column;
 }
+
+@media (min-width: $desktop-width) {
+  .user-message {
+    margin-bottom: 36px;
+  }
+}

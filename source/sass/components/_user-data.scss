@@ -29,4 +29,33 @@
     align-items: center;
     border: 2px solid #e5e5e5;
   }
+
+  .user-data__wrapper-contacts {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-data {
+    width: 435px;
+  }
+
+  .user-data--contacts {
+    width: 940px;
+    padding: 0;
+  }
+
+  .user-data__title {
+    padding-bottom: 29px;
+  }
+
+  .user-data__wrapper {
+    width: 940px;
+  }
+
+  .user-data__wrapper-contacts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }

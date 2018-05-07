@@ -37,3 +37,52 @@
     margin-right: auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .events__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 940px;
+    padding: 0;
+  }
+
+  .events__wrapper {
+    width: 940px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+  }
+
+  .events__list {
+    width: 820px;
+  }
+
+  .events__item {
+    min-width: 256px;
+
+  }
+
+  .events__item--selfie {
+    order: 1;
+  }
+
+  .events__item--norris {
+    order: 2;
+  }
+
+  .events__item--tower {
+    order: 3;
+  }
+
+  .events__item--beach {
+    order: 4;
+  }
+
+  .events__item--shopping {
+    order: 5;
+  }
+
+  .events__item--hotel {
+    order: 6;
+  }
+}

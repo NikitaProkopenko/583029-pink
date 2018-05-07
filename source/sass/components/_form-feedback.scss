@@ -39,3 +39,28 @@
     order: 6;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-feedback {
+    flex-flow: row wrap;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form-feedback__user-data {
+    margin-right: 69px;
+    margin-top: 9px;
+  }
+
+  .form-feedback__user-data-contacts {
+    width: 940px;
+  }
+
+  .form-feedback__events {
+    width: 940px;
+  }
+
+  .form-feedback__controls {
+    padding: 0;
+  }
+}

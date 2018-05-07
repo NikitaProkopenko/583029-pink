@@ -56,3 +56,12 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-field {
+    &--user-data {
+      width: 375px;
+      margin-bottom: 5px;
+    }
+  }
+}

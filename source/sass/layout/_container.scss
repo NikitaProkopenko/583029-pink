@@ -15,5 +15,21 @@
   .container {
     width: $desktop-width;
     padding: 0 10px;
+
+    &--desktop-form {
+      min-width: 435px;
+      padding: 0;
+    }
+
+    &--desktop-events {
+       min-width: 940px;
+       padding: 0;
+    }
+
+    &--user-message {
+      min-width: 940px;
+      padding: 0;
+    }
   }
 }
+

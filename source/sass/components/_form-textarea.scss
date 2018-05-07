@@ -49,3 +49,18 @@
     background-color: $bg-white;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-textarea__wrapper {
+    box-sizing: border-box;
+    width: 940px;
+  }
+
+  .form-textarea__label {
+    margin-bottom: 9px;
+  }
+
+  .form-textarea__input {
+    margin-bottom: 33px;
+  }
+}

@@ -146,8 +146,12 @@
     line-height: 58px;
     margin-bottom: 28px;
 
-    &--photo,
+    &--photo {
+      margin-top: -220px;
+    }
+
     &--form {
+      width: 750px;
       margin-top: -220px;
     }
   }
