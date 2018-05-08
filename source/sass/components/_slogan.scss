@@ -1,3 +1,13 @@
+.slogan::after {
+  position: absolute;
+  content: "";
+  min-width: 320px;
+  min-height: 40px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -63px;
+}
+
 .slogan__title {
   font-family: "Open Sans Light", "Arial", sans-serif;
   font-size: 24px;

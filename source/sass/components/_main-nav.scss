@@ -26,7 +26,7 @@
 .main-nav__logo::before {
   content: "";
   position: absolute;
-  top: 17px;
+  top: 10px;
   left: 20px;
   width: 80px;
   height: 30px;
@@ -38,13 +38,13 @@
 .main-nav__toggle {
   width: 25px;
   height: 25px;
-  padding: 32px 0 36px 0;
+  padding: 25px 0 36px 0;
   margin-right: 20px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   background-image: url("../img/icon-menu-cross.svg");
   background-repeat: no-repeat;
-  background-position: 0 50%;
+  background-position: 0 40%;
 }
 
 @media (min-width: $tablet-width) {

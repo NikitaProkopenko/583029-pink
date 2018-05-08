@@ -17,7 +17,10 @@
 }
 
 a.platform-list__item--apple {
+  width: 70px;
+  height: 70px;
   background-image: url("../img/logo-apple.svg");
+  background-position: 20px 0;
 }
 
 a.platform-list__item--android {
@@ -25,7 +28,11 @@ a.platform-list__item--android {
 }
 
 a.platform-list__item--windows {
+  width: 70px;
+  height: 70px;
+  margin-left: -5px;
   background-image: url("../img/logo-microsoft.svg");
+  background-position: 0 9px;
 }
 
 @media (min-width: $tablet-width) {
