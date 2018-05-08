@@ -1,5 +1,82 @@
-//styles for block
-
 .events {
   background-color: $bg-grey;
+  margin-bottom: 32px;
+}
+
+.events__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.events__item {
+  margin-bottom: 50px;
+
+  &:last-child {
+    padding-bottom: 45px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .events {
+    background-color: $bg-white;
+    margin-bottom: 0;
+  }
+
+  .events__wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 0 60px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .events__list {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .events__list {
+    width: 820px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .events__wrapper {
+    width: 940px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+  }
+
+  .events__item {
+    min-width: 256px;
+  }
+
+  .events__item--selfie {
+    order: 1;
+  }
+
+  .events__item--norris {
+    order: 2;
+  }
+
+  .events__item--tower {
+    order: 3;
+  }
+
+  .events__item--beach {
+    order: 4;
+  }
+
+  .events__item--shopping {
+    order: 5;
+  }
+
+  .events__item--hotel {
+    order: 6;
+  }
 }

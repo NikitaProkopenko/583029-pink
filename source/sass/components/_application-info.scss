@@ -1,5 +1,60 @@
-//styles for block
-
 .application-info {
   background-color: $bg-grey;
+  margin-bottom: 32px;
+}
+
+.application-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.application-info__item {
+  margin-bottom: 40px;
+
+  &:last-child {
+    padding-bottom: 45px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .application-info {
+    background-color: $bg-white;
+    margin-bottom: 66px;
+  }
+
+  .application-info__wrapper {
+    width: 620px;
+    box-sizing: border-box;
+    padding: 0 60px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border: 2px solid #e5e5e5;
+  }
+
+  .application-info__list {
+    margin-right: auto;
+  }
+
+  .application-info__item {
+    &:last-child {
+      padding-bottom: 63px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-info {
+    width: 435px;
+  }
+
+  .application-info__wrapper {
+    width: 435px;
+  }
+
+  .application-info__list {
+    margin-left: 17px;
+  }
 }

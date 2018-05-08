@@ -1,5 +1,40 @@
-//styles for block
-
 .price {
   background-color: $bg-grey;
+}
+
+.price__wrapper {
+  padding-top: 90px;
+  margin-bottom: 40px;
+  min-width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.price__buttons {
+  margin: 0;
+  padding: 0 0 40px 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .price__wrapper {
+    margin-bottom: 47px;
+  }
+
+  .price__buttons {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__wrapper {
+    padding-top: 152px;
+    padding-bottom: 34px;
+    margin-bottom: 63px;
+  }
 }

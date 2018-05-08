@@ -9,9 +9,15 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav container">
-        <b class="main-nav__logo">Pink</b>
-        <button class="main-nav__toggle" type="button">Меню</button>
+      <nav class="main-nav main-nav__wrapper">
+        <div class="main-nav__controls">
+          <a href="index.html" class="main-nav__logo">
+            <span class="visually-hidden">Pink</span>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a href="index.html">Главная</a>
@@ -29,9 +35,10 @@
       </nav>
     </header>
     <main class="page-main">
-      <section class="intro">
+      <section class="intro intro--photo">
+        <h3 class="visually-hidden">Фото</h3>
         <div class="container">
-          <h2 class="intro__title">Фотографии пользователей</h2>
+          <p class="intro__title intro__title--photo">Фотографии пользователей</p>
         </div>
       </section>
       <section class="photo">
@@ -41,157 +48,161 @@
             Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
           </p>
         </div>
-        <ul class="photo__list gallery container">
+        <ul class="photo__list photo__list--day gallery">
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post__image day-photo" src="http://placehold.it/150x100" width="320" height="140" alt="Панорама дня">
-              <span class="label photo-post__label">Панорама дня</span>
-              <p class="photo-post__title">
-                <span class="photo-post__author">
-                  Анна
-                </span>
-                <span class="photo-post__time">
-                  (5 минут назад)
-                </span>
-              </p>
-              <p class="photo-post__description">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <p class="photo-post__controls">
-                <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
-                  Нравится: 215
-                </span>
-              </p>
+            <img class="gallery__item-image gallery__item-image--day" src="http://placehold.it/150x100" width="320" height="140" alt="Панорама дня">
+            <div class="container">
+              <div class="gallery__post gallery__post--day">
+                <span class="label gallery__post-label">Панорама дня</span>
+                <p class="gallery__post-title">
+                  <span class="gallery__post-author gallery__post-author--day">
+                    Анна
+                  </span>
+                  <span class="gallery__post-time gallery__post-time--day">
+                    (5 минут назад)
+                  </span>
+                </p>
+                <p class="gallery__post-description gallery__post-description--day">
+                  Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </p>
+                <p class="gallery__post-controls gallery__post-controls--day">
+                  <button class="like" type="button">Нравится</button>
+                  <span class="gallery__post-control-text">
+                    Нравится: 215
+                  </span>
+                </p>
+              </div>
             </div>
           </li>
+        </ul>
+        <ul class="photo__list gallery container">
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post__image" src="http://placehold.it/150x100" width="320" height="140" alt="Левон 5 часов назад">
-              <p class="photo-post__title">
-                <span class="photo-posts__author">
+            <img class="gallery__item-image" src="http://placehold.it/150x100" width="280" height="181" alt="Левон 5 часов назад">
+            <div class="gallery__post">
+              <p class="gallery__post-title">
+                <span class="gallery__post-author">
                   Левон
                 </span>
-                <span class="photo-posts__time">
+                <span class="gallery__post-time">
                   (5 часов назад)
                 </span>
               </p>
-              <p class="photo-post__description">
+              <p class="gallery__post-description">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <p class="photo-post__controls">
+              <p class="gallery__post-controls">
                 <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
+                <span class="gallery__post-control-text">
                   Нравится: 356
                 </span>
               </p>
             </div>
           </li>
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post__image" src="http://placehold.it/150x100" width="320" height="140" alt="Антон 12 часов назад">
-              <p class="photo-post__title">
-                <span class="photo-post__author">
+            <img class="gallery__item-image" src="http://placehold.it/150x100" width="280" height="181" alt="Антон 12 часов назад">
+            <div class="gallery__post">
+              <p class="gallery__post-title">
+                <span class="gallery__post-author">
                   Антон
                 </span>
-                <span class="photo-post__time">
+                <span class="gallery__post-time">
                   (12 часов назад)
                 </span>
               </p>
-              <p class="photo-post__description">
+              <p class="gallery__post-description">
                 Соседи будут рады!
               </p>
-              <p class="photo-post__controls">
+              <p class="gallery__post-controls">
                 <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
+                <span class="gallery__post-control-text">
                   Нравится: 666
                 </span>
               </p>
             </div>
           </li>
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post_image" src="http://placehold.it/150x100" width="320" height="140" alt="Борис 20 часов назад">
-              <p class="photo-post__title">
-                <span class="photo-post__author">
+            <img class="gallery__item-image" src="http://placehold.it/150x100" width="280" height="181" alt="Борис 20 часов назад">
+            <div class="gallery__post">
+              <p class="gallery__post-title">
+                <span class="gallery__post-author">
                   Борис
                 </span>
-                <span class="photo-post__time">
+                <span class="gallery__post-time">
                   (20 часов назад)
                 </span>
               </p>
-              <p class="photo-post__description">
+              <p class="gallery__post-description">
                 Здесь могла быть ваша цитата о высоком и вечном
               </p>
-              <p class="photo-post__controls">
+              <p class="gallery__post-controls">
                 <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
+                <span class="gallery__post-control-text">
                   Нравится: 215
                 </span>
               </p>
             </div>
           </li>
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post_image" src="http://placehold.it/150x100" width="320" height="140" alt="Сергей 25 часов назад">
-              <p class="photo-post__title">
-                <span class="photo-post__author">
+            <img class="gallery__item-image" src="http://placehold.it/150x100" width="280" height="181" alt="Сергей 25 часов назад">
+            <div class="gallery__post">
+              <p class="gallery__post-title">
+                <span class="gallery__post-author">
                   Сергей
                 </span>
-                <span class="photo-post__time">
+                <span class="gallery__post-time">
                   (25 часов назад)
                 </span>
               </p>
-              <p class="photo-post__description">
+              <p class="gallery__post-description">
                 Самая кубанская в мире!
               </p>
-              <p class="photo-post__controls">
+              <p class="gallery__post-controls">
                 <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
+                <span class="gallery__post-control-text">
                   Нравится: 4
                 </span>
               </p>
             </div>
           </li>
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post_image" src="http://placehold.it/150x100" width="320" height="140" alt="Максим 40 часов назад">
-              <p class="photo-post__title">
-                <span class="photo-post__author">
+            <img class="gallery__item-image" src="http://placehold.it/150x100" width="280" height="181" alt="Максим 40 часов назад">
+            <div class="gallery__post">
+              <p class="gallery__post-title">
+                <span class="gallery__post-author">
                   Максим
                 </span>
-                <span class="photo-post__time">
+                <span class="gallery__post-time">
                   (40 часов назад)
                 </span>
               </p>
-              <p class="photo-post__description">
+              <p class="gallery__post-description">
                 Где снег-то?
               </p>
-              <p class="photo-post__controls">
+              <p class="gallery__post-controls">
                 <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
+                <span class="gallery__post-control-text">
                   Нравится: 150
                 </span>
               </p>
             </div>
           </li>
           <li class="gallery__item">
-            <div class="photo-post">
-              <img class="photo-post__image" src="http://placehold.it/150x100" width="320" height="140" alt="Надежда 45 часов назад">
-              <p class="photo-post__title">
-                <span class="photo-post__author">
+            <img class="gallery__item-image" src="http://placehold.it/150x100" width="280" height="181" alt="Надежда 45 часов назад">
+            <div class="gallery__post">
+              <p class="gallery__post-title">
+                <span class="gallery__post-author">
                   Надежда
                 </span>
-                <span class="photo-post__time">
+                <span class="gallery__post-time">
                   (45 часов назад)
                 </span>
               </p>
-              <p class="photo-post__description">
+              <p class="gallery__post-description">
                 Всем GM и взаимные лайки!
               </p>
-              <p class="photo-post__controls">
+              <p class="gallery__post-controls">
                 <button class="like" type="button">Нравится</button>
-                <span class="photo-post__control-text">
+                <span class="gallery__post-control-text">
                   Нравится: 2560
                 </span>
               </p>
@@ -201,35 +212,81 @@
       </section>
       <section class="upload">
         <h2 class="visually-hidden">Загрузите свои фотографии</h2>
-        <div class="container">
+        <div class="upload__description-wrapper container">
+          <p class="upload__description upload__description--first">
+            Затмите их всех!
+          </p>
           <p class="upload__description">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+            Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
         <div class="upload__wrapper">
           <div class="container">
-            <img class="upload__photo user-photo" src="http://placehold.it/150x100" width="320" height="462" alt="Фотография пользователя">
-            <ul class="upload__icons-list control-icons">
-              <li class="control-icons__item">
-                <button class="control-icons__button" type="button">Обрезать</button>
-              </li>
-              <li class="control-icons__item">
-                <button class="control-icons__button" type="button">Заливка</button>
-              </li>
-              <li class="control-icons__item">
-                <button class="control-icons__button" type="button">Контраст</button>
-              </li>
-            </ul>
-            <div class="range-control">
-              <!--Range control-->
+            <div class="control-icons__wrapper">
+              <img class="upload__photo" src="http://placehold.it/150x100" width="280" height="374" alt="Фотография пользователя">
+              <div class="control-icons__settings-wrapper">
+                <ul class="upload__icons-list control-icons">
+                  <li class="control-icons__item">
+                    <button class="control-icons__button" type="button">Обрезать</button>
+                    <div class="range-control range-control--big range-control--crop">
+                      <div class="range-control__scale"></div>
+                      <div class="range-control__toggle range-control__toggle--crop">
+                        <span class="visually-hidden">Управление</span>
+                      </div>
+                    </div>
+                    <div class="upload__line upload__line--big">
+                      <span class="visually-hidden">Разделитель</span>
+                    </div>
+                  </li>
+                  <li class="control-icons__item">
+                    <button class="control-icons__button" type="button">Заливка</button>
+                    <div class="range-control range-control--big range-control--fill">
+                      <div class="range-control__scale"></div>
+                      <div class="range-control__toggle range-control__toggle--fill">
+                        <span class="visually-hidden">Управление</span>
+                      </div>
+                    </div>
+                    <div class="upload__line upload__line--big">
+                      <span class="visually-hidden">Разделитель</span>
+                    </div>
+                  </li>
+                  <li class="control-icons__item">
+                    <button class="control-icons__button" type="button">Контраст</button>
+                    <div class="range-control range-control--big range-control--contrast">
+                      <div class="range-control__scale"></div>
+                      <div class="range-control__toggle range-control__toggle--contrast">
+                        <span class="visually-hidden">Управление</span>
+                      </div>
+                    </div>
+                    <div class="upload__line upload__line--big">
+                      <span class="visually-hidden">Разделитель</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="upload__control-wrapper upload__control-wrapper--big">
+                  <button class="upload__control-button upload__control-button--post button" type="submit">Запостить</button>
+                  <button class="upload__control-button upload__control-button--cancel button" type="reset">Отмена</button>
+                </div>
+              </div>
             </div>
-            <button class="upload__control-button button" type="submit">Запостить</button>
-            <button class="upload__control-button button" type="reset">Отмена</button>
+            <div class="range-control">
+              <div class="range-control__scale"></div>
+              <div class="range-control__toggle">
+                <span class="visually-hidden">Управление</span>
+              </div>
+            </div>
+          </div>
+          <div class="upload__line">
+            <span class="visually-hidden">Разделитель</span>
+          </div>
+          <div class="upload__control-wrapper container">
+            <button class="upload__control-button upload__control-button--post button" type="submit">Запостить</button>
+            <button class="upload__control-button upload__control-button--cancel button" type="reset">Отмена</button>
           </div>
         </div>
       </section>
       <footer class="main-footer">
-        <div class="container">
+        <div class="main-footer__wrapper container">
           <a href="index.html" class="main-footer__logo">Pink</a>
           <ul class="main-footer__social social-icons">
             <li class="social-icons__item">
@@ -242,7 +299,7 @@
               <a href="#" class="social-icons__link social-icons__link--youtube">Youtube</a>
             </li>
           </ul>
-          <span class="main-footer__copyright">
+          <span class="main-footer__copyright copyright">
           Разработано
           <a href="https://htmlacademy.ru/intensive/adaptive" class="main-footer__copyright-icon">HTML Academy</a>
           </span>

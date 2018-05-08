@@ -1,1 +1,66 @@
-//styles for block
+.form-field {
+  margin: 0 0 19px 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.form-field__label {
+  margin-bottom: 6px;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form-field__input {
+  box-sizing: border-box;
+  padding: 13px 22px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .form-field {
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 56px;
+
+    &--user-data {
+      flex-flow: row wrap;
+      width: 100%;
+      margin-bottom: 23px;
+    }
+  }
+
+  .form-field__input {
+    width: 100%;
+
+    &--user-data {
+      order: 1;
+      margin-bottom: 13px;
+    }
+  }
+
+  .form-field__label {
+    padding-left: 0;
+    padding-right: 19px;
+
+    &--user-data {
+      order: 2;
+      padding-left: 19px;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field {
+    &--user-data {
+      width: 375px;
+      margin-bottom: 5px;
+    }
+  }
+}

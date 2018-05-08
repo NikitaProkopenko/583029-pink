@@ -1,1 +1,48 @@
-//styles for block
+.control-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+@media (min-width: $tablet-width) {
+  .control-icons__button {
+    display: none;
+  }
+
+  .control-icons__wrapper {
+    padding-top: 55px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .control-icons__settings-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .control-icons__item {
+    margin-top: 20px;
+  }
+
+  .control-icons__item:nth-child(2) {
+    margin-top: 36px;
+  }
+
+  .control-icons__item:nth-child(3) {
+    margin-top: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .control-icons__wrapper {
+    background-color: $bg-grey;
+    padding: 58px 60px;
+  }
+
+  .control-icons__item {
+    margin-top: 17px;
+  }
+}

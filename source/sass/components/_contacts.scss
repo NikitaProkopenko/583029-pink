@@ -1,1 +1,51 @@
-//styles for block
+.contacts__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.contacts__title {
+  margin: 0 0 30px 0;
+  padding: 0;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 26px;
+  }
+
+  .contacts__title {
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+  }
+
+  .contacts__map {
+    width: 660px;
+    height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 60px;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    margin-bottom: 53px;
+  }
+
+  .contacts__map {
+    width: 1200px;
+    height: 500px;
+  }
+}

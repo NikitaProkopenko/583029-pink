@@ -1,7 +1,159 @@
-//styles for block
-
 .upload {
+  margin-bottom: 60px;
+}
+
+.upload__wrapper {
+  background-color: $bg-grey;
+  padding-bottom: 42px;
+}
+
+.upload__description-wrapper {
+  margin-bottom: 50px;
+}
+
+.upload__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+
+  &--first {
+    padding-bottom: 5px;
+  }
+}
+
+.upload__photo {
+  padding-top: 21px;
+  margin-bottom: 40px;
+}
+
+.upload__icons-list {
+  margin: 0 0 37px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.upload__line {
+  height: 1px;
+  background-color: #dddfe0;
+  margin-bottom: 39px;
+
+  &--big {
+    display: none;
+  }
+}
+
+.upload__control-wrapper {
+  display: block;
+
+  &--big {
+    display: none;
+  }
+}
+
+.upload__control-button {
+  &--post {
+    margin-bottom: 15px;
+    color: #d22856;
+    border-color: #d22856;
+  }
+
+  &--cancel {
+    color: #dddfe0;
+    border-color: #dddfe0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .upload__description {
+    font-size: 18px;
+  }
+
   .upload__wrapper {
-    background-color: $bg-grey;
+    padding-bottom: 55px;
+  }
+
+  .upload__icons-list {
+    width: 278px;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+  }
+
+  .upload__description-wrapper {
+    margin-bottom: 74px;
+  }
+
+  .upload__line {
+    display: none;
+
+    &--big {
+      display: block;
+      margin: 0;
+    }
+  }
+
+  .upload__photo {
+    width: 300px;
+    height: 400px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .upload__control-wrapper {
+    display: none;
+
+    &--big {
+      display: flex;
+      flex-flow: column;
+    }
+  }
+
+  .upload__control-button {
+    width: 260px;
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+
+    &--post {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload__description-wrapper {
+    margin-bottom: 70px;
+  }
+
+  .upload__wrapper {
+    background-color: $bg-white;
+  }
+
+  .upload__icons-list {
+    width: 420px;
+  }
+
+  .upload__control-button {
+    width: 180px;
+
+    &--post {
+      margin-bottom: 0;
+    }
+  }
+
+  .upload__photo {
+    padding-left: 20px;
+  }
+
+  .upload__control-wrapper {
+    &--big {
+      width: 420px;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

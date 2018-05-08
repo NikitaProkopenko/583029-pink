@@ -1,1 +1,36 @@
-//styles for block
+.review {
+  margin-bottom: 44px;
+}
+
+.review__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.review__buttons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__buttons {
+    display: none;
+  }
+
+  .review__wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: start;
+  }
+}

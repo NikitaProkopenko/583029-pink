@@ -1,1 +1,45 @@
-//styles for block
+.slogan__title {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 26px 0;
+  padding: 0;
+}
+
+.slogan__wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .slogan__title {
+    font-size: 40px;
+    margin-bottom: 0;
+
+    &--second {
+      width: 500px;
+      line-height: 1.5em;
+    }
+  }
+
+  .slogan {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slogan__title {
+    font-size: 50px;
+    margin-bottom: 0;
+
+    &--second {
+      width: 500px;
+      line-height: 1.4em;
+    }
+  }
+
+  .slogan {
+    margin-bottom: 68px;
+  }
+}

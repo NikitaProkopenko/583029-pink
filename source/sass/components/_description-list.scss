@@ -1,1 +1,53 @@
-//styles for block
+.description-list__item {
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.description-list__title {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 10px;
+}
+
+.description-list__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .description-list {
+    width: 310px;
+    order: 2;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .description-list__item {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description-list {
+    flex-flow: row wrap;
+    width: 880px;
+    justify-content: space-between;
+  }
+
+  .description-list__item {
+    width: 240px;
+    text-align: center;
+  }
+
+  .description-list__title {
+    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .description-list__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
