@@ -42,6 +42,10 @@
   .slogan {
     margin-bottom: 40px;
   }
+
+  .slogan::after {
+    top: 126%;
+  }
 }
 
 @media (min-width: $desktop-width) {

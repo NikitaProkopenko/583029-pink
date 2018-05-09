@@ -18,3 +18,14 @@
   left: 13px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .label {
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .label__text {
+    top: 0;
+    left: 8px;
+  }
+}

@@ -39,6 +39,15 @@ a.platform-list__item--windows {
   .platform-list {
     margin-bottom: 34px;
   }
+
+  a.platform-list__item--apple {
+    background-position: 0 0;
+    margin-left: -17px;
+  }
+
+  a.platform-list__item--windows {
+    margin-left: 29px;
+  }
 }
 
 @media (min-width: $desktop-width) {

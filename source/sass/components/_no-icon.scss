@@ -8,3 +8,9 @@
   background-repeat: no-repeat;
   background-position: 40% 35%;
 }
+
+@media (min-width: $tablet-width) {
+  .no-icon::after {
+    background-position: 53% 0;
+  }
+}
