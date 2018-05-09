@@ -1,5 +1,20 @@
 .label {
-  color: $bg-white;
-  background-color: #d22856;
+  width: 74px;
+  height: 73px;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.label__text {
+  display: inline-block;
+  color: $bg-white;
+  transform: rotate(312deg);
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  text-transform: uppercase;
 }
