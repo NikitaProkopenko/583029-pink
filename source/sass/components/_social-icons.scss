@@ -4,3 +4,32 @@
   justify-content: space-between;
   width: 180px;
 }
+
+.social-icons__item {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e9ebec;
+  border-radius: 30px;
+}
+
+.social-icons__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &--twitter {
+    top: 20%;
+    left: 30%;
+  }
+
+  &--facebook {
+    top: 20%;
+    left: 38%;
+  }
+
+  &--youtube {
+    top: 20%;
+    left: 36%;
+  }
+}

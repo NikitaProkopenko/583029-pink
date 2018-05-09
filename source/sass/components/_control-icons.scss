@@ -4,6 +4,24 @@
   justify-content: space-around;
 }
 
+.control-icons__button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-icons__item:nth-child(1) {
+  margin-left: 16px;
+}
+
+.control-icons__item:nth-child(3) {
+  margin-right: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .control-icons__button {
     display: none;
