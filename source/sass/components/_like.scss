@@ -1,1 +1,9 @@
-//styles for block
+.like {
+  width: 14px;
+  height: 14px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
