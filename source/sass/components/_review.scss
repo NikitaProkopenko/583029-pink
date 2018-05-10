@@ -52,4 +52,8 @@
     justify-content: space-between;
     align-items: start;
   }
+
+  .review::after {
+    top: 103%;
+  }
 }

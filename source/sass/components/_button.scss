@@ -78,7 +78,13 @@
 
     &--slider {
       display: block;
-      margin-top: 40px;
+      width: 30px;
+      height: 40px;
+      margin-top: 68px;
+      border: none;
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
     }
   }
 }

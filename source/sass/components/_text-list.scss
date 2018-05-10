@@ -30,6 +30,14 @@
     margin-bottom: 13px;
   }
 
+  .text-list__item:nth-child(1) {
+    margin-left: 24px;
+  }
+
+  .text-list__item:nth-child(2) {
+    margin-left: 54px;
+  }
+
   .text-list__item:nth-child(3) {
     width: 280px;
     padding-top: 30px;
@@ -53,6 +61,7 @@
 
   .text-list__item:nth-child(2) {
     order: 3;
+    margin-left: 66px;
   }
 
   .text-list__title {

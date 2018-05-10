@@ -45,6 +45,7 @@
 
   .slogan::after {
     top: 126%;
+    z-index: 0;
   }
 }
 
@@ -61,5 +62,9 @@
 
   .slogan {
     margin-bottom: 68px;
+  }
+
+  .slogan::after {
+    top: 140%;
   }
 }

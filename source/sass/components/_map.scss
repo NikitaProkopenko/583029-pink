@@ -37,6 +37,11 @@
     height: 374px;
   }
 
+  .map::after {
+    top: 51%;
+    left: 47%;
+  }
+
   .map::before {
     top: -2px;
   }
@@ -45,5 +50,10 @@
 @media (min-width: $desktop-width) {
   .map {
     height: 500px;
+  }
+
+  .map::after {
+    top: 52%;
+    left: 48%;
   }
 }

@@ -33,6 +33,10 @@
     align-self: flex-end;
   }
 
+  .information__banner-wrapper {
+    z-index: 1;
+  }
+
   .information__description {
     padding-top: 33px;
   }
