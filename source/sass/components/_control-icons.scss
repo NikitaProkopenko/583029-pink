@@ -27,7 +27,7 @@
     display: none;
   }
 
-  .control-icons__wrapper {
+  .control-icons {
     padding-top: 55px;
     display: flex;
     flex-flow: row wrap;
@@ -74,7 +74,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .control-icons__wrapper {
+  .control-icons {
     background-color: $bg-grey;
     padding: 58px 60px;
   }

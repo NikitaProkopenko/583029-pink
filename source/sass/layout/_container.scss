@@ -1,6 +1,6 @@
 .container,
 .container__form {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
@@ -9,13 +9,13 @@
 @media (min-width: $tablet-width) {
   .container,
   .container__form {
-    min-width: $tablet-width;
+    max-width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    max-width: $desktop-width;
     padding: 0 10px;
 
     &--desktop-form {
