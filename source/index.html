@@ -102,9 +102,16 @@
             </li>
           </ul>
           <div class="information__banner-wrapper">
-            <img class="information__banner" src="../img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Всем привет!">
-            <img class="information__banner information__banner--desktop" src="http://placehold.it/150x100" width="160" height="300" alt="Всем привет!">
-            <img class="information__banner information__banner--desktop" src="http://placehold.it/150x100" width="160" height="300" alt="Всем привет!">
+            <picture>
+              <source media="(min-width: 960px)" srcset="../img/iphone-screen-1-desktop@1x.png 1x, ../img/iphone-screen-1-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="../img/iphone-screen-3-tablet@1x.png 1x, ../img/iphone-screen-3-tablet@2x.png 2x">
+              <img class="information__banner" src="../img/iphone-screen-mobile@1x.png" width="157" height="320"
+                   srcset="../img/iphone-screen-mobile@2x.png 2x" alt="Всем привет!">
+            </picture>
+            <img class="information__banner information__banner--desktop" src="../img/iphone-screen-2-desktop@1x.png" width="160" height="300"
+                 srcset="../img/iphone-screen-2-desktop@2x.png 2x" alt="Всем привет!">
+            <img class="information__banner information__banner--desktop" src="../img/iphone-screen-3-desktop@1x.png" width="160" height="300"
+                 srcset="../img/iphone-screen-3-desktop@2x.png 2x" alt="Всем привет!">
           </div>
         </div>
       </section>
