@@ -64,7 +64,7 @@
     &--photo,
     &--form {
       padding-top: 100px;
-      min-height: 319px;
+      min-height: 394px;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: 0 center;
       background-size: 660px 395px;
@@ -130,6 +130,11 @@
 
     &--form {
       width: 750px;
+    }
+
+    &--photo {
+      width: 370px;
+      margin-top: 75px;
     }
   }
 

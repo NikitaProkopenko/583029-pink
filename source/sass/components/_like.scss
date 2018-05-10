@@ -7,3 +7,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: $tablet-width) {
+  .like {
+    margin-left: 20px;
+  }
+}

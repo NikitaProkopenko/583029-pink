@@ -45,12 +45,31 @@
     margin-top: 20px;
   }
 
+  .control-icons__item:nth-child(1) {
+    margin-left: 0;
+  }
+
   .control-icons__item:nth-child(2) {
     margin-top: 36px;
   }
 
   .control-icons__item:nth-child(3) {
     margin-top: 34px;
+    margin-right: 0;
+  }
+
+  .control-icons__big-icon {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: -16px;
+    left: -1px;
+    transform: scale(.5);
+
+    &--contrast {
+      top: -11px;
+      left: 6px;
+    }
   }
 }
 
@@ -62,5 +81,18 @@
 
   .control-icons__item {
     margin-top: 17px;
+  }
+
+  .control-icons__big-icon {
+    width: 50px;
+    height: 50px;
+    top: -24px;
+    left: 8px;
+    transform: scale(1);
+
+    &--contrast {
+      top: -16px;
+      left: 16px;
+    }
   }
 }
