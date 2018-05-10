@@ -36,6 +36,10 @@
   .map {
     height: 374px;
   }
+
+  .map::before {
+    top: -2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
