@@ -14,15 +14,24 @@
 
 .main-footer__social {
   list-style: none;
-  margin-bottom: 30px;
+  margin: 0 0 28px 0;
+  padding: 0;
 }
 
 .main-footer__logo {
-  margin-bottom: 46px;
+  margin-bottom: 33px;
 }
 
 .main-footer__copyright {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   margin-bottom: 44px;
+}
+
+.main-footer__copyright-icon {
+  margin-left: 10px;
+  padding-top: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +54,7 @@
 
   .main-footer__social {
     margin-bottom: 0;
+    margin-right: 24px;
   }
 
   .main-footer__copyright {
@@ -55,5 +65,9 @@
 @media (min-width: $desktop-width) {
   .main-footer {
     margin-bottom: 80px;
+  }
+
+  .main-footer__copyright {
+    font-size: 18px;
   }
 }

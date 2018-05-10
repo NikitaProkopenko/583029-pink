@@ -1,6 +1,8 @@
 .intro {
-  padding-top: 462px;
+  min-height: 462px;
   margin-bottom: 40px;
+  padding-top: 450px;
+  box-sizing: border-box;
   color: $text-white;
   background-color: $bg-dark-blue;
   background-image: url("../img/iphone-hand-mobile@1x.png"),
@@ -13,10 +15,11 @@
   &--photo,
   &--form {
     margin-bottom: 46px;
-    padding-top: 235px;
+    padding-top: 78px;
+    min-height: 243px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-position: 0 center;
-    background-size: 320px 235px;
+    background-position: 0 -3%;
+    background-size: cover;
   }
 }
 
@@ -28,7 +31,6 @@
   &--photo,
   &--form {
     display: block;
-    margin-top: -140px;
     padding: 0;
     text-align: center;
     font-family: "Open Sans Light", "Arial", sans-serif;
@@ -61,10 +63,11 @@
 
     &--photo,
     &--form {
-      padding-top: 319px;
+      padding-top: 100px;
+      min-height: 394px;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: 0 center;
-      background-size: 660px 395px;
+      background-size: cover;
       margin-bottom: 92px;
     }
   }
@@ -89,7 +92,6 @@
 
     &--photo,
     &--form {
-      margin-top: -181px;
       width: 620px;
       font-size: 50px;
     }
@@ -108,10 +110,10 @@
 
     &--photo,
     &--form {
-      padding-top: 395px;
+      min-height: 395px;
       background-image: url("../img/bg-back-mobile@1x.jpg");
       background-position: 0 center;
-      background-size: 1200px 395px;
+      background-size: cover;
       margin-bottom: 92px;
     }
   }
@@ -121,17 +123,18 @@
   }
 
   .intro__title {
+    width: 240px;
     font-size: 50px;
     line-height: 58px;
-    margin-bottom: 28px;
-
-    &--photo {
-      margin-top: -220px;
-    }
+    margin-bottom: 33px;
 
     &--form {
       width: 750px;
-      margin-top: -220px;
+    }
+
+    &--photo {
+      width: 370px;
+      margin-top: 75px;
     }
   }
 

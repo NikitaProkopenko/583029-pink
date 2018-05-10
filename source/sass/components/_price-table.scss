@@ -35,6 +35,7 @@
 
 .price-table__content-row {
   width: 280px;
+  position: relative;
   display: flex;
   letter-spacing: 0.01em;
   flex-flow: row wrap;
@@ -48,6 +49,10 @@
   line-height: 30px;
   text-transform: uppercase;
   padding: 15px 0 14px 21px;
+}
+
+.price-table__icon {
+  width: 60px;
 }
 
 @media (min-width: $tablet-width) {
@@ -79,6 +84,7 @@
 
   .price-table__content-row {
     width: 155px;
+    min-height: 46px;
     justify-content: center;
 
     &--description {
@@ -112,6 +118,7 @@
 
   .price-table__content-row {
     width: 230px;
+    min-height: 59px;
 
     &--description {
       width: 230px;

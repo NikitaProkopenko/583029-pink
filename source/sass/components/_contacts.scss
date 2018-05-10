@@ -1,4 +1,5 @@
 .contacts__wrapper {
+  position: relative;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -18,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 26px;
+    margin-bottom: 38px;
   }
 
   .contacts__title {
@@ -27,25 +28,15 @@
     line-height: 1.2em;
     margin-bottom: 40px;
   }
-
-  .contacts__map {
-    width: 660px;
-    height: 374px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 60px;
+    margin-bottom: 71px;
   }
 
   .contacts__title {
     font-size: 50px;
-    margin-bottom: 53px;
-  }
-
-  .contacts__map {
-    width: 1200px;
-    height: 500px;
+    margin-bottom: 49px;
   }
 }

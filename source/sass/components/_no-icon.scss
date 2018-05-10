@@ -1,1 +1,16 @@
-//styles for block
+.no-icon::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 40% 35%;
+}
+
+@media (min-width: $tablet-width) {
+  .no-icon::after {
+    background-position: 53% 0;
+  }
+}
