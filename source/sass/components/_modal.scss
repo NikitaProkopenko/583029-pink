@@ -102,10 +102,6 @@
     width: 470px;
   }
 
-  .modal__button {
-    width: 470px;
-  }
-
   .modal__button-wrapper-ok {
     background-color: $bg-grey;
     padding: 15px 20px;
@@ -113,6 +109,8 @@
   }
 
   .modal__button {
+    width: 470px;
+
     &--ok {
       width: 300px;
     }
