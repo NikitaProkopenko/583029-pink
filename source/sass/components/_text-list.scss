@@ -50,22 +50,29 @@
 
 @media (min-width: $desktop-width) {
   .text-list {
-    width: 940px;
+    width: 848px;
     margin-bottom: 6px;
+    justify-content: space-between;
+  }
+
+  .text-list__item {
+    max-width: 211px;
   }
 
   .text-list__item:nth-child(3) {
     padding-top: 0;
     order: 2;
+    margin: 0;
   }
 
   .text-list__item:nth-child(1) {
     order: 1;
+    margin: 0;
   }
 
   .text-list__item:nth-child(2) {
     order: 3;
-    margin-left: 66px;
+    margin: 0;
   }
 
   .text-list__title {

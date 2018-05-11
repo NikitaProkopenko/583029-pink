@@ -61,7 +61,7 @@
   .map {
     height: 500px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: 0 -286px;
+    background-position: 0 -279px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
@@ -71,5 +71,9 @@
   .map::after {
     top: 52%;
     left: 48%;
+  }
+
+  .map::before {
+    top: 0;
   }
 }
