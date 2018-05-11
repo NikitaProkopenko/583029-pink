@@ -2,10 +2,29 @@
   position: relative;
   display: flex;
   flex-flow: column;
+  background-color: $bg-dark-blue;
 
   a {
     text-decoration: none;
     color: $text-white;
+  }
+
+  &.close {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    ul.main-nav__list {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      &--cross {
+        display: none;
+      }
+
+      &--burger {
+        display: block;
+      }
+    }
   }
 }
 
@@ -44,6 +63,14 @@
   margin-right: 20px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+
+  &--cross {
+    display: block;
+  }
+
+  &--burger {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -78,6 +105,7 @@
   .main-nav {
     flex-flow: row wrap;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, -0.1);
   }
 
   .main-nav__controls {
