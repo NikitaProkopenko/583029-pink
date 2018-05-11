@@ -12,14 +12,20 @@
   background-color: rgba(255, 255, 255, 0);
 
   &--point {
-    width: 12px;
-    height: 12px;
+    display: block;
+    width: 6px;
+    height: 6px;
     padding: 0;
     margin: 0;
-    border: 0;
-    background-image: url("../img/icon-editor-contrast.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    border: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(194, 190, 199, 1);
+
+    &.active {
+      width: 12px;
+      height: 12px;
+      border: 3px solid rgba(40, 56, 69, 1);
+      background-color: rgba(255, 255, 255, 0);
+    }
   }
 
   &--send {
