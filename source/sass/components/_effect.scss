@@ -6,6 +6,10 @@
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
+
+  &--new-line {
+    display: none;
+  }
 }
 
 .effect__description {
@@ -29,13 +33,58 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 165px;
   }
 
   .effect__text-wrapper {
+    padding-top: 29px;
     display: flex;
     flex-flow: column;
     width: 310px;
+  }
+
+  .effect__title {
+    margin: 0 0 8px 0;
+
+    &--new-line {
+      display: block;
+    }
+  }
+
+  .effect__description {
+    margin: 0 0 11px 0;
+  }
+
+  .effect__img {
+    position: relative;
+    width: 240px;
+    min-height: 280px;
+
+    &--vector {
+      position: absolute;
+      top: -23px;
+      left: 0;
+    }
+
+    &--text {
+      position: absolute;
+      top: 87px;
+      left: 64px;
+      font-family: "Open Sans Bold", "Arial", sans-serif;
+      font-size: 96px;
+      line-height: 150px;
+      color: #d22856;
+    }
+
+    &--text-border {
+      min-width: 200px;
+      min-height: 200px;
+      position: absolute;
+      top: 68px;
+      left: 20px;
+      border: 12px solid #d22856;
+      border-radius: 100px;
+    }
   }
 }
 
@@ -50,6 +99,10 @@
   .effect__title {
     margin-top: -19px;
     margin-bottom: 24px;
+
+    &--new-line {
+      display: none;
+    }
   }
 
   .effect__img {
