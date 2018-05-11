@@ -45,6 +45,11 @@
     text-align: center;
   }
 
+  .description-list__item:nth-child(1),
+  .description-list__item:nth-child(3) {
+    margin-top: 10px;
+  }
+
   .description-list__title {
     font-family: "Open Sans Bold", "Arial", sans-serif;
     font-size: 30px;
