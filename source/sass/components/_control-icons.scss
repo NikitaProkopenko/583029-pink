@@ -14,14 +14,6 @@
   background-position: center;
 }
 
-//.control-icons__item:nth-child(1) {
-//  margin-left: 16px;
-//}
-//
-//.control-icons__item:nth-child(3) {
-//  margin-right: 20px;
-//}
-
 @media (min-width: $tablet-width) {
   .control-icons__button {
     display: none;
@@ -42,7 +34,7 @@
   }
 
   .control-icons__item {
-    margin-top: 20px;
+    margin-top: 17px;
   }
 
   .control-icons__item:nth-child(1) {
