@@ -63,11 +63,31 @@
     padding-left: 10px;
   }
 
+  .slider__info {
+    min-width: 750px;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .slider__info::before {
+    position: absolute;
+    width: 85px;
+    height: 70px;
+    content: "";
+    top: -114px;
+    left: 336px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .slider__title {
     font-size: 24px;
+    margin-right: 10px;
   }
 
   .slider__title-info {
     font-size: 18px;
+    margin-right: 10px;
   }
 }

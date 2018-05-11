@@ -88,9 +88,16 @@
       height: 40px;
       margin-top: 68px;
       border: none;
-      background-image: url("../img/icon-editor-contrast.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
+
+      &.back {
+        background-image: url("../img/icon-review-arrow-left.svg");
+      }
+
+      &.forward {
+        background-image: url("../img/icon-review-arrow-right.svg");
+      }
     }
   }
 }

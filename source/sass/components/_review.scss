@@ -40,6 +40,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    margin-bottom: 0;
+    padding-bottom: 4px;
+  }
+
   .review__buttons {
     display: none;
   }
@@ -51,6 +56,6 @@
   }
 
   .review::after {
-    top: 105%;
+    top: 100%;
   }
 }

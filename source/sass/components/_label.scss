@@ -29,3 +29,14 @@
     left: 8px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .label {
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .label__text {
+    top: 9px;
+    left: 13px;
+  }
+}
