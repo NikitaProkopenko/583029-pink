@@ -168,7 +168,7 @@
 
 @media (min-width: $desktop-width) {
   .gallery__item {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
 
     &--day {
       margin: 0 auto 50px;
@@ -193,5 +193,11 @@
 
   .gallery__post-label {
     right: 130px;
+  }
+
+  .gallery__post-description {
+    &--day {
+      padding-bottom: 21px;
+    }
   }
 }
