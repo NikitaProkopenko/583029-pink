@@ -32,4 +32,9 @@
   .form-radio__label {
     padding-left: 57px;
   }
+
+  .form-radio__label::before {
+    top: -3px;
+    left: -2px;
+  }
 }
