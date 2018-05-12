@@ -153,18 +153,22 @@
 
     .like {
       order: 2;
+      margin-right: 5px;
+      margin-bottom: 5px;
     }
 
     .gallery__post-control-text {
       order: 1;
       margin-left: 0;
+      padding-top: 5px;
+      margin-right: -7px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .gallery__item {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
 
     &--day {
       margin: 0 auto 50px;
@@ -189,5 +193,11 @@
 
   .gallery__post-label {
     right: 130px;
+  }
+
+  .gallery__post-description {
+    &--day {
+      padding-bottom: 21px;
+    }
   }
 }

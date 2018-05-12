@@ -2,10 +2,29 @@
   position: relative;
   display: flex;
   flex-flow: column;
+  background-color: $bg-dark-blue;
 
   a {
     text-decoration: none;
     color: $text-white;
+  }
+
+  &.close {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    ul.main-nav__list {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      &--cross {
+        display: none;
+      }
+
+      &--burger {
+        display: block;
+      }
+    }
   }
 }
 
@@ -17,45 +36,68 @@
 }
 
 .main-nav__controls {
+  min-height: 70px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #000001;
 }
 
-.main-nav__logo::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  width: 80px;
-  height: 30px;
-  background-image: url("../img/logo-pink-white-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: 0 50%;
+.main-nav__logo {
+  padding: 0;
+  margin-left: -51px;
+  margin-top: -10px;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-nav__toggle {
-  width: 25px;
-  height: 25px;
-  padding: 25px 0 36px 0;
+  padding: 0;
   margin-right: 20px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-position: 0 40%;
+
+  &--cross {
+    display: block;
+  }
+
+  &--burger {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__logo::before {
-    top: 40px;
+  .main-nav__controls {
+    min-height: 110px;
+  }
+
+  .main-nav__logo {
+    margin-left: 0;
+    margin-top: 0;
+
+    &--position-tablet {
+      margin-left: 20px;
+      margin-bottom: 3px;
+    }
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   .main-nav__toggle {
-    width: 25px;
-    height: 25px;
-    padding: 55px 0;
+    margin-bottom: -6px;
   }
 }
 
@@ -63,6 +105,7 @@
   .main-nav {
     flex-flow: row wrap;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, -0.1);
   }
 
   .main-nav__controls {
@@ -73,8 +116,19 @@
     display: none;
   }
 
-  .main-nav__logo::before {
-    left: 10px;
+  .main-nav__logo {
+    &--position-desktop {
+      margin-left: 0;
+      margin-bottom: 6px;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 
   .main-nav__wrapper {

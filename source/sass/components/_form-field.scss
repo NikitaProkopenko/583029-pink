@@ -41,6 +41,9 @@
     &--user-data {
       order: 1;
       margin-bottom: 13px;
+      padding-left: 16px;
+      padding-top: 14px;
+      padding-bottom: 14px;
     }
   }
 
@@ -52,7 +55,35 @@
       order: 2;
       padding-left: 19px;
       padding-right: 0;
+      position: relative;
+      margin-bottom: 3px;
     }
+  }
+
+  .form-field__label--user-data::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 58px;
+    top: -73px;
+    right: -347px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-field__label--user-data.email::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 58px;
+    top: -73px;
+    right: -377px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -60,7 +91,21 @@
   .form-field {
     &--user-data {
       width: 375px;
-      margin-bottom: 5px;
+      margin-bottom: 7px;
     }
+  }
+
+  .form-field__label {
+    &--user-data.email {
+      padding-left: 21px;
+    }
+  }
+
+  .form-field__label--user-data::before {
+    right: -227px;
+  }
+
+  .form-field__label--user-data.email::before {
+    right: -254px;
   }
 }

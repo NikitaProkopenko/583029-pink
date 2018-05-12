@@ -1,13 +1,19 @@
 .modal {
   display: none;
   width: 320px;
+  box-sizing: border-box;
   position: fixed;
+  padding: 30px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
   z-index: 20;
+
+  &.show {
+    display: block;
+  }
 }
 
 .modal__wrapper {
@@ -59,10 +65,6 @@
   padding: 0;
 }
 
-.modal__show {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .modal {
     width: 460px;
@@ -96,10 +98,15 @@
 @media (min-width: $desktop-width) {
   .modal {
     width: 780px;
+    padding: 0;
   }
 
   .modal__wrapper {
     width: 470px;
+  }
+
+  .modal__description {
+    width: 355px;
   }
 
   .modal__button-wrapper-ok {

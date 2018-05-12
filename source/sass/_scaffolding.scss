@@ -20,6 +20,8 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -27,6 +29,12 @@ body {
   color: $text-dark-blue;
 
   background-color: $bg-white;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
 }
 
 .visually-hidden {

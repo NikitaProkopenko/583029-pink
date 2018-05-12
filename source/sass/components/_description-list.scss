@@ -24,6 +24,12 @@
 
   .description-list__item {
     text-align: left;
+    padding: 0;
+  }
+
+  .description-list__item:nth-child(2) {
+    margin-top: 11px;
+    margin-bottom: 11px;
   }
 }
 
@@ -37,6 +43,11 @@
   .description-list__item {
     width: 240px;
     text-align: center;
+  }
+
+  .description-list__item:nth-child(1),
+  .description-list__item:nth-child(3) {
+    margin-top: 10px;
   }
 
   .description-list__title {

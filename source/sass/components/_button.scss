@@ -12,14 +12,20 @@
   background-color: rgba(255, 255, 255, 0);
 
   &--point {
-    width: 12px;
-    height: 12px;
+    display: block;
+    width: 6px;
+    height: 6px;
     padding: 0;
     margin: 0;
-    border: 0;
-    background-image: url("../img/icon-editor-contrast.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    border: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(194, 190, 199, 1);
+
+    &.active {
+      width: 12px;
+      height: 12px;
+      border: 3px solid rgba(40, 56, 69, 1);
+      background-color: rgba(255, 255, 255, 0);
+    }
   }
 
   &--send {
@@ -29,14 +35,15 @@
     text-transform: uppercase;
     font-family: "Open Sans Bold", "Arial", sans-serif;
     line-height: 30px;
+    letter-spacing: 0.01em;
     border-color: rgba(255, 255, 255, 0);
     color: $text-white;
     border-radius: 3px;
   }
 
   &--intro {
-    width: 274px;
-    margin-top: 39px;
+    width: 280px;
+    margin-top: 42px;
     margin-bottom: 35px;
     padding: 15px 0;
     border: 3px solid #ffffff;
@@ -61,7 +68,7 @@
     }
 
     &--intro {
-      width: 290px;
+      width: 300px;
       margin-top: 23px;
       margin-bottom: 47px;
     }
@@ -82,9 +89,16 @@
       height: 40px;
       margin-top: 68px;
       border: none;
-      background-image: url("../img/icon-editor-contrast.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
+
+      &.back {
+        background-image: url("../img/icon-review-arrow-left.svg");
+      }
+
+      &.forward {
+        background-image: url("../img/icon-review-arrow-right.svg");
+      }
     }
   }
 }

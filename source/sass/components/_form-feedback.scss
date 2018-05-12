@@ -26,16 +26,17 @@
 
   .form-feedback__events {
     order: 4;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
   }
 
   .form-feedback__user-message {
     order: 5;
-    margin-bottom: 30px;
+    margin-bottom: 18px;
   }
 
   .form-feedback__controls {
     order: 6;
+    min-width: 660px;
   }
 }
 
@@ -59,7 +60,12 @@
     width: 940px;
   }
 
+  .form-feedback__user-message {
+    margin-bottom: 27px;
+  }
+
   .form-feedback__controls {
     padding: 0;
+    min-width: 960px;
   }
 }
