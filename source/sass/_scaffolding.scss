@@ -30,7 +30,9 @@ body {
   background-color: $bg-white;
 }
 
-*,::before,::after {
+*,
+::before,
+::after {
   box-sizing: inherit;
 }
 

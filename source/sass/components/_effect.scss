@@ -97,6 +97,9 @@
   }
 
   .effect__img {
+    width: 300px;
+    height: 350px;
+
     &--vector {
       top: 0;
     }
@@ -125,11 +128,6 @@
     &--new-line {
       display: none;
     }
-  }
-
-  .effect__img {
-    width: 300px;
-    height: 350px;
   }
 
   .effect__wrapper {
