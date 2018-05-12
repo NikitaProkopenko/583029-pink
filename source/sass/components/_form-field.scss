@@ -60,31 +60,31 @@
     }
   }
 
-  //.form-field__label--user-data::before {
-  //  position: absolute;
-  //  content: "";
-  //  width: 60px;
-  //  height: 58px;
-  //  top: -73px;
-  //  right: -347px;
-  //  background-color: #e5e5e5;
-  //  background-image: url("../img/icon-phone.svg");
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //}
-  //
-  //.form-field__label--user-data.email::before {
-  //  position: absolute;
-  //  content: "";
-  //  width: 60px;
-  //  height: 58px;
-  //  top: -73px;
-  //  right: -377px;
-  //  background-color: #e5e5e5;
-  //  background-image: url("../img/icon-mail.svg");
-  //  background-repeat: no-repeat;
-  //  background-position: center;
-  //}
+  .form-field__label--user-data::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 58px;
+    top: -73px;
+    right: -347px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .form-field__label--user-data.email::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 58px;
+    top: -73px;
+    right: -377px;
+    background-color: #e5e5e5;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -99,5 +99,13 @@
     &--user-data.email {
       padding-left: 21px;
     }
+  }
+
+  .form-field__label--user-data::before {
+    right: -227px;
+  }
+
+  .form-field__label--user-data.email::before {
+    right: -254px;
   }
 }
