@@ -33,3 +33,10 @@
     padding-left: 57px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-checkbox__label::before {
+    top: -3px;
+    left: -2px;
+  }
+}

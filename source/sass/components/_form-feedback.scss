@@ -60,7 +60,12 @@
     width: 940px;
   }
 
+  .form-feedback__user-message {
+    margin-bottom: 27px;
+  }
+
   .form-feedback__controls {
     padding: 0;
+    min-width: 960px;
   }
 }
