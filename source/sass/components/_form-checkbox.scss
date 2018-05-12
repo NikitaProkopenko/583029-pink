@@ -18,9 +18,14 @@
   left: 0;
   width: 40px;
   height: 40px;
-  background-image: url("../img/icon-editor-crop.svg");
+  background-color: $bg-white;
+  border: 2px solid #e5e5e5;
+}
+
+.form-checkbox__input:checked + label::before {
+  background-image: url("../img/icon-checkbox.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
