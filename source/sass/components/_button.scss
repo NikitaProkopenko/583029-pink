@@ -91,14 +91,14 @@
       border: none;
       background-repeat: no-repeat;
       background-position: 50% 50%;
+    }
 
-      &.back {
-        background-image: url("../img/icon-review-arrow-left.svg");
-      }
+    &--back {
+      background-image: url("../img/icon-review-arrow-left.svg");
+    }
 
-      &.forward {
-        background-image: url("../img/icon-review-arrow-right.svg");
-      }
+    &--forward {
+      background-image: url("../img/icon-review-arrow-right.svg");
     }
   }
 }
