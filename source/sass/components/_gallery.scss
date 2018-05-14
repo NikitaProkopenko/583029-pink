@@ -160,8 +160,12 @@
     .gallery__post-control-text {
       order: 1;
       margin-left: 0;
-      padding-top: 5px;
+      padding-top: 0;
       margin-right: -7px;
+
+      &--day {
+        padding-top: 5px;
+      }
     }
   }
 }
