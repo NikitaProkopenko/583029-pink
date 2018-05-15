@@ -51,6 +51,14 @@
     border-color: rgba(255, 255, 255, 0);
     color: $text-white;
     border-radius: 3px;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: #61b98f;
+    }
   }
 
   &--intro {
@@ -110,18 +118,21 @@
       display: block;
       width: 30px;
       height: 40px;
-      margin-top: 68px;
+      margin-top: 51px;
       border: none;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
+      outline: none;
 
-    &--back {
-      background-image: url("../img/icon-review-arrow-left.svg");
-    }
+      &:hover {
+        svg {
+          fill: #7e868f;
+        }
+      }
 
-    &--forward {
-      background-image: url("../img/icon-review-arrow-right.svg");
+      &:active {
+        svg {
+          opacity: 0.3;
+        }
+      }
     }
   }
 }
