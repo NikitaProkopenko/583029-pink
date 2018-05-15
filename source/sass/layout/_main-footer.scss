@@ -21,6 +21,24 @@
 .main-footer__logo {
   margin-bottom: 22px;
 
+  &:hover {
+    path {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+
+    .main-footer__logo--svg-text {
+      path {
+        fill: #283645;
+      }
+    }
+  }
+
   &--mobile {
     display: block;
   }
@@ -41,6 +59,18 @@
 .main-footer__copyright-icon {
   margin-left: 8px;
   margin-top: 9px;
+
+  &:hover {
+    path {
+      fill: #283645;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

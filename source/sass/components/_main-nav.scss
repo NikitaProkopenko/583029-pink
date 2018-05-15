@@ -51,6 +51,19 @@
   margin-left: -51px;
   margin-top: -10px;
 
+  &:hover {
+    path {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
+
   &--tablet {
     display: none;
   }
@@ -66,6 +79,18 @@
   margin-right: 20px;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+
+  &:hover {
+    path {
+      fill: #d22856;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
 
   &--cross {
     display: block;
