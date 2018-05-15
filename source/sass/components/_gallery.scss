@@ -51,6 +51,10 @@
 
 .gallery__item-image {
   margin-bottom: -24px;
+
+  &--day {
+    width: 100%;
+  }
 }
 
 .gallery__post-author {
