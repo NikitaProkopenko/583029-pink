@@ -44,7 +44,6 @@
 }
 
 .gallery__post-description {
-  min-height: 50px;
   margin: 0 0 6px 0;
   font-size: 14px;
   line-height: 24px;
@@ -206,6 +205,8 @@
   }
 
   .gallery__post-description {
+    min-height: 44px;
+
     &--day {
       padding-bottom: 21px;
     }
