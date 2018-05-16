@@ -44,6 +44,7 @@
 }
 
 .gallery__post-description {
+  min-height: 50px;
   margin: 0 0 6px 0;
   font-size: 14px;
   line-height: 24px;
@@ -51,6 +52,10 @@
 
 .gallery__item-image {
   margin-bottom: -24px;
+
+  &--day {
+    width: 100%;
+  }
 }
 
 .gallery__post-author {
@@ -115,6 +120,7 @@
 
   .gallery__post-title {
     padding-top: 33px;
+    margin-right: auto;
   }
 
   .gallery__post-author {
@@ -160,8 +166,12 @@
     .gallery__post-control-text {
       order: 1;
       margin-left: 0;
-      padding-top: 5px;
+      padding-top: 0;
       margin-right: -7px;
+
+      &--day {
+        padding-top: 5px;
+      }
     }
   }
 }

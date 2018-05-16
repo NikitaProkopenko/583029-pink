@@ -9,6 +9,18 @@
   padding-bottom: 4px;
   font-size: 18px;
   line-height: 30px;
+
+  &:hover {
+    &.form-checkbox__label::before {
+      border-color: #2b3948;
+    }
+  }
+
+  &:active {
+    &.form-checkbox__label::before {
+      border-color: #d63c66;
+    }
+  }
 }
 
 .form-checkbox__label::before {

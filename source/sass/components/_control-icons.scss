@@ -12,6 +12,27 @@
   background-color: rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
   background-position: center;
+
+  &.active {
+    path,
+    rect {
+      fill: #d22856;
+    }
+  }
+
+  &:hover {
+    path,
+    rect {
+      fill: #8d949b;
+    }
+  }
+
+  &:active {
+    path,
+    rect {
+      fill: #d22856;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

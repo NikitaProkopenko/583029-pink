@@ -11,5 +11,19 @@
 @media (min-width: $tablet-width) {
   .like {
     margin-left: 20px;
+
+    &--day {
+      margin-right: 3px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .like {
+    &--day {
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
   }
 }

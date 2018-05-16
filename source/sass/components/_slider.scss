@@ -64,7 +64,7 @@
   }
 
   .slider__info {
-    min-width: 750px;
+    width: 750px;
     margin-right: 10px;
     position: relative;
   }
@@ -75,7 +75,8 @@
     height: 70px;
     content: "";
     top: -114px;
-    left: 336px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center;

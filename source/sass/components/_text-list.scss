@@ -24,6 +24,21 @@
   font-size: 24px;
   color: #d22856;
   text-align: center;
+
+  & a {
+    text-decoration: none;
+    color: #d22856;
+  }
+
+  & a:hover {
+    text-decoration: underline;
+    color: #283645;
+  }
+
+  & a:active {
+    text-decoration: none;
+    color: #ced0d2;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -25,6 +25,18 @@
       height: 12px;
       border: 3px solid rgba(40, 56, 69, 1);
       background-color: rgba(255, 255, 255, 0);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+
+    &:hover {
+      background-color: rgba(126, 134, 143, 1);
+    }
+
+    &:active {
+      background-color: rgba(233, 235, 236, 1);
     }
   }
 
@@ -39,9 +51,24 @@
     border-color: rgba(255, 255, 255, 0);
     color: $text-white;
     border-radius: 3px;
+
+    &:hover {
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      color: #61b98f;
+    }
+
+    &.disabled {
+      background-color: #e5e5e5;
+      color: #ffffff;
+    }
   }
 
   &--intro {
+    position: relative;
+    z-index: 6;
     width: 280px;
     margin-top: 42px;
     margin-bottom: 35px;
@@ -53,6 +80,15 @@
     font-size: 18px;
     line-height: 18px;
     letter-spacing: 0.05em;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #d22856;
+    }
+
+    &:active {
+      color: #f1becc;
+    }
   }
 
   &--slider {
@@ -87,17 +123,21 @@
       display: block;
       width: 30px;
       height: 40px;
-      margin-top: 68px;
+      margin-top: 51px;
+      padding-bottom: 80px;
       border: none;
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
+      outline: none;
 
-      &.back {
-        background-image: url("../img/icon-review-arrow-left.svg");
+      &:hover {
+        svg {
+          fill: #7e868f;
+        }
       }
 
-      &.forward {
-        background-image: url("../img/icon-review-arrow-right.svg");
+      &:active {
+        svg {
+          opacity: 0.3;
+        }
       }
     }
   }
