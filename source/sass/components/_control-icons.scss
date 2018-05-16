@@ -14,19 +14,22 @@
   background-position: center;
 
   &.active {
-    path {
+    path,
+    rect {
       fill: #d22856;
     }
   }
 
   &:hover {
-    path {
+    path,
+    rect {
       fill: #8d949b;
     }
   }
 
   &:active {
-    path {
+    path,
+    rect {
       fill: #d22856;
     }
   }
